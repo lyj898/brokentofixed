@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+<path d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="164" cy="184" rx="122" ry="7" fill="#EAD5C6"/>
+  <rect x="96" y="30" width="112" height="152" rx="8" fill="#C4935A"/>
+  <rect x="104" y="42" width="96" height="134" rx="3" fill="#FFFFFF"/>
+  <rect x="130" y="24" width="44" height="18" rx="5" fill="#5B6675"/>
+  <rect x="114" y="54" width="44" height="6" rx="2" fill="#A3401B"/>
+  <rect x="114" y="70" width="76" height="14" rx="3" fill="#FBF8F1" stroke="#E4D9CB" stroke-width="1.5"/><rect x="114" y="92" width="76" height="14" rx="3" fill="#FBF8F1" stroke="#E4D9CB" stroke-width="1.5"/><rect x="114" y="114" width="76" height="14" rx="3" fill="#FBF8F1" stroke="#E4D9CB" stroke-width="1.5"/>
+  <rect x="114" y="140" width="46" height="14" rx="4" fill="#A3401B"/>
+  <g transform="translate(206 136) rotate(-40)">
+    <rect x="0" y="-5" width="56" height="10" rx="2" fill="#F2B632"/>
+    <path d="M0-5l-12 5 12 5z" fill="#EBCB9C"/><path d="M-12 0l4-1.6v3.2z" fill="#2A2420"/>
+    <rect x="50" y="-5" width="8" height="10" rx="2" fill="#D9774E"/>
+  </g>
+  
+  <g transform="translate(258 184) scale(0.75)">
+    <path d="M-14-30v-8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v8" stroke="#3E4652" stroke-width="4" fill="none"/>
+    <rect x="-34" y="-32" width="68" height="32" rx="4" fill="#2F6F73"/>
+    <rect x="-34" y="-32" width="68" height="9" rx="3" fill="#1F4F52"/>
+    <rect x="-5" y="-26" width="10" height="7" rx="1.5" fill="#F2B632"/>
+  </g>
+</svg>

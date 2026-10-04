@@ -1,0 +1,75 @@
+---
+/**
+ * A small fix beside a renovation job, to show where this site's lane ends.
+ * Renovation is Junk to Clear's (PORTFOLIO lanes), so that side links its
+ * renovation page and says the same team runs it.
+ */
+import { company } from '../lib/data';
+
+interface Props {
+  /** Job-specific lists, on a job page. Defaults to the general picture. */
+  small?: string[];
+  bigger?: string[];
+  note?: string;
+  heading?: string;
+}
+
+const {
+  small = [
+    'Repairs and replacements: a tap, a hinge, a light',
+    'Things you’ve bought, put up or put together',
+    'Usually one visit, often an hour or two',
+    'No change to the layout of the home',
+  ],
+  bigger = [
+    'Hacking walls, re-tiling, new floors',
+    'Moving pipes, power points or a kitchen',
+    'Built-in carpentry and full repainting',
+    'Usually planned, and scheduled over days or weeks',
+  ],
+  note,
+  heading = 'A small fix, or a renovation?',
+} = Astro.props;
+
+const tick = 'M13.5 4.5 6.5 12 2.5 8.2';
+---
+
+<div>
+  <h2 class="text-2xl font-semibold sm:text-3xl">{heading}</h2>
+  <div class="mt-8 grid gap-5 md:grid-cols-2">
+    <figure class="rounded-card border border-brand/30 bg-surface p-6">
+      <img src="/illo/small-fix.svg" alt="A basin with a repaired tap and a tick beside it, a toolbox and a spanner: one small fix" width="320" height="220" loading="lazy" decoding="async" class="mx-auto h-36 w-auto" />
+      <figcaption class="mt-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-brand">What this site arranges</p>
+        <h3 class="mt-1 text-lg font-semibold">A handyman job</h3>
+        <ul class="mt-3 space-y-2">
+          {small.map((s) => (
+            <li class="flex gap-3 text-sm leading-relaxed text-ink-muted">
+              <svg class="mt-1 shrink-0 text-brand" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={tick} /></svg>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+      </figcaption>
+    </figure>
+    <figure class="rounded-card border border-line bg-surface-sunk p-6">
+      <img src="/illo/renovation.svg" alt="A wall with its plaster hacked off to the bricks, a bin of debris and new tiles: a renovation" width="320" height="220" loading="lazy" decoding="async" class="mx-auto h-36 w-auto" />
+      <figcaption class="mt-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-ink-faint">A bigger job</p>
+        <h3 class="mt-1 text-lg font-semibold">A renovation</h3>
+        <ul class="mt-3 space-y-2">
+          {bigger.map((s) => (
+            <li class="flex gap-3 text-sm leading-relaxed text-ink-muted">
+              <span class="mt-2 size-1.5 shrink-0 rounded-full bg-ink-faint" aria-hidden="true"></span>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-4 text-sm leading-relaxed text-ink-muted">
+          {note && <span>{note}{' '}</span>}<a href={company.links.junkToClearRenovation} class="text-brand underline underline-offset-2">Junk to Clear</a>,
+          run by the same team as {company.tradingName}, takes renovation enquiries.
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+</div>

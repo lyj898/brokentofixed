@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+<path d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="164" cy="184" rx="122" ry="7" fill="#EAD5C6"/>
+  <rect x="112" y="52" width="104" height="130" rx="2" fill="#EBCB9C"/>
+  <rect x="112" y="52" width="10" height="130" fill="#D9A86C"/>
+  <rect x="206" y="52" width="10" height="130" fill="#D9A86C"/>
+  <rect x="112" y="48" width="104" height="10" rx="2" fill="#C4935A"/>
+  <rect x="122" y="104" width="84" height="6" fill="#D9A86C"/>
+  <rect x="122" y="170" width="84" height="12" fill="#C4935A"/>
+  <rect x="140" y="60" width="2.5" height="40" fill="#C4935A"/>
+  <path d="M141 62h50" stroke="#B8C1CB" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(10 236 182)">
+    <rect x="222" y="62" width="44" height="120" rx="2" fill="#D9A86C"/>
+    <rect x="228" y="70" width="32" height="104" rx="1.5" fill="none" stroke="#C4935A" stroke-width="2"/>
+    <rect x="227" y="112" width="4" height="16" rx="2" fill="#5B6675"/>
+  </g>
+  <path d="M50 182v-38h52v38z" fill="#CDA472"/>
+  <path d="M50 144l-12-14h52l12 14z" fill="#B48A58"/>
+  <path d="M102 144l10-16" stroke="#B48A58" stroke-width="4" stroke-linecap="round"/>
+  <rect x="62" y="152" width="28" height="4" rx="2" fill="#B48A58"/>
+  <path d="M60 128v-14M66 128v-10M74 128v-16" stroke="#D9A86C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M232 192h22v-8" stroke="#3E4652" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#5B6675"><circle cx="268" cy="190" r="2.6"/><circle cx="276" cy="186" r="2.2"/><circle cx="262" cy="185" r="2"/></g>
+  
+  <g transform="translate(84 192) rotate(-4) scale(0.85)">
+    <rect x="0" y="-5" width="30" height="10" rx="5" fill="#A3401B"/>
+    <rect x="4" y="-5" width="3" height="10" fill="#742C11"/><rect x="12" y="-5" width="3" height="10" fill="#742C11"/>
+    <rect x="30" y="-2" width="28" height="4" fill="#B8C1CB"/>
+    <path d="M58-2l6 2-6 2z" fill="#5B6675"/>
+  </g>
+</svg>

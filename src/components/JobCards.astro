@@ -1,0 +1,35 @@
+---
+/** Grid of illustrated links to the job pages. Used on the home and handyman pages. */
+import { jobs } from '../lib/data';
+import { urls } from '../lib/urls';
+---
+
+<ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  {jobs.map((j) => (
+    <li>
+      <a
+        href={urls.job(j.slug)}
+        class="group flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface no-underline transition-colors hover:border-brand/40"
+      >
+        <div class="border-b border-line bg-canvas px-6 pt-4">
+          <img
+            src={`/illo/${j.slug}.svg`}
+            alt=""
+            width="320"
+            height="220"
+            loading="lazy"
+            decoding="async"
+            class="mx-auto h-40 w-auto transition-transform duration-200 group-hover:scale-[1.03]"
+          />
+        </div>
+        <div class="flex gap-4 p-6">
+          <img src={`/icons/${j.slug}.svg`} alt="" width="64" height="64" loading="lazy" decoding="async" class="size-11 shrink-0" />
+          <div>
+            <h3 class="font-semibold text-ink group-hover:text-brand">{j.serviceName} &rarr;</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-muted">{j.summary}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  ))}
+</ul>

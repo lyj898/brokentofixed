@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import { jobs } from '../lib/data';
+import { urls } from '../lib/urls';
+import { meta } from '../lib/seo';
+
+const { title, description } = meta(
+  'Page Not Found | BrokenToFixed',
+  'That page does not exist. Browse handyman jobs, see how BrokenToFixed works, or send an enquiry for a quote from a partner handyman.',
+);
+---
+
+<BaseLayout title={title} description={description} path={'/404/'} noindex={true}>
+  <Section narrow>
+    <img
+      src="/illo/not-found.svg"
+      alt="A signpost with one of its signs hanging loose"
+      width="320"
+      height="220"
+      decoding="async"
+      class="h-auto w-full max-w-xs"
+    />
+    <h1 class="mt-6 text-3xl font-semibold">Page not found</h1>
+    <p class="mt-4 text-ink-muted">That page doesn’t exist. These might help:</p>
+    <ul class="mt-6 space-y-2">
+      <li><a href={urls.home()} class="text-brand underline underline-offset-2">Home</a></li>
+      <li><a href={urls.handyman()} class="text-brand underline underline-offset-2">Handyman services in Singapore</a></li>
+      {jobs.map((j) => (
+        <li><a href={urls.job(j.slug)} class="text-brand underline underline-offset-2">{j.serviceName}</a></li>
+      ))}
+      <li><a href={urls.contact()} class="text-brand underline underline-offset-2">Ask for a quote</a></li>
+    </ul>
+  </Section>
+</BaseLayout>

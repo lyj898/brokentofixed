@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import FaqList from '../components/FaqList.astro';
+import StepsStrip from '../components/StepsStrip.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+import { company } from '../lib/data';
+import { urls } from '../lib/urls';
+import { meta } from '../lib/seo';
+
+const path = urls.howItWorks();
+const { title, description } = meta(
+  'How BrokenToFixed Works | Handyman Singapore',
+  'How a BrokenToFixed enquiry works: what we do, what the partner handyman does, how you get a quote, and who you pay. No obligation to book.',
+);
+
+const faqs = [
+  {
+    q: 'Who does the work?',
+    a: `An independent partner handyman. ${company.tradingName} is a matching service: we don’t send anyone to your home or office ourselves.`,
+  },
+  {
+    q: 'Why don’t you show prices?',
+    a: 'Because a handyman job depends on what’s involved, the parts, the walls and fittings, and how many jobs are done in one visit. Rather than publish figures that might not match your job, we let the handyman quote once it knows what the job is.',
+  },
+  {
+    q: 'Who do I pay?',
+    a: 'The handyman, for the job it quoted and did. You book and settle the job with the handyman directly.',
+  },
+  {
+    q: 'What if I’m not happy with the work?',
+    a: 'Tell the handyman first, since it did the work and is best placed to put it right.',
+  },
+  {
+    q: 'What happens to my details?',
+    a: `They go to the team behind ${company.parentBrand}, which passes them to the partner handyman who will quote you. They’re used only for your enquiry and aren’t sold. The privacy policy has the details.`,
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  crumbs={[{ name: 'How it works', path }]}
+>
+  <section class="border-b border-line bg-surface">
+    <div class="wrap grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div>
+        <h1 class="max-w-3xl text-3xl font-semibold sm:text-4xl lg:text-5xl">How it works</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          {company.tradingName} is a matching service. You tell us what needs fixing, and we
+          pass it to a partner handyman, who quotes and does the job.
+        </p>
+      </div>
+      <img
+        src="/illo/about.svg"
+        alt="An enquiry travelling from a person at a desk with a laptop to a handyman holding a toolbox"
+        width="480"
+        height="300"
+        fetchpriority="high"
+        decoding="async"
+        class="mx-auto h-auto w-full max-w-sm"
+      />
+    </div>
+  </section>
+
+  <Section narrow>
+    <StepsStrip long />
+  </Section>
+
+  <Section tone="sunk">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h2 class="text-lg font-semibold">What we do</h2>
+        <ul class="mt-4 space-y-2 text-sm leading-relaxed text-ink-muted">
+          <li>Read your enquiry and check we understand the job.</li>
+          <li>Pass it to a partner handyman who takes on that kind of job.</li>
+          <li>Try another partner if the first can’t take the job.</li>
+        </ul>
+      </div>
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h2 class="text-lg font-semibold">What the partner handyman does</h2>
+        <ul class="mt-4 space-y-2 text-sm leading-relaxed text-ink-muted">
+          <li>Contacts you about the job and arranges a time.</li>
+          <li>Gives you its quote, from photos or after a look.</li>
+          <li>Brings the tools and parts, and does the work.</li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section narrow>
+    <h2 class="text-2xl font-semibold sm:text-3xl">Questions</h2>
+    <div class="mt-8">
+      <FaqList faqs={faqs} />
+    </div>
+    <p class="mt-8 text-ink-muted">
+      Start with your job:
+      <a href={urls.handyman()} class="text-brand underline underline-offset-2">handyman jobs in Singapore</a>.
+    </p>
+  </Section>
+
+  <CtaBand heading="Got something that needs fixing?" body="Send one enquiry and a partner handyman will be in touch." />
+</BaseLayout>

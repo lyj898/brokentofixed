@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+<path d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="164" cy="184" rx="122" ry="7" fill="#EAD5C6"/>
+  <rect x="64" y="38" width="196" height="112" fill="#EEF2F3"/><rect x="91" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="119" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="147" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="175" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="203" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="231" y="38" width="2" height="112" fill="#D3DCDF"/><rect x="64" y="65" width="196" height="2" fill="#D3DCDF"/><rect x="64" y="93" width="196" height="2" fill="#D3DCDF"/><rect x="64" y="121" width="196" height="2" fill="#D3DCDF"/>
+  <rect x="58" y="150" width="208" height="30" rx="4" fill="#FFFFFF"/>
+  <rect x="58" y="150" width="208" height="5" fill="#DDE3E8"/>
+  <path d="M64 151h96" stroke="#3B3B33" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <g fill="#3B3B33" opacity=".7"><circle cx="78" cy="144" r="1.6"/><circle cx="96" cy="145" r="1.3"/><circle cx="120" cy="143" r="1.6"/><circle cx="140" cy="145" r="1.2"/></g>
+  <path d="M162 151h70" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M162 151h70" stroke="#DDE3E8" stroke-width="1.5" stroke-linecap="round"/>
+  <g transform="translate(228 149) rotate(-28) scale(0.8)">
+    <path d="M0 0l12-4v8z" fill="#FBF8F1"/>
+    <rect x="12" y="-8" width="56" height="16" rx="4" fill="#FFFFFF" stroke="#E4D9CB" stroke-width="1.5"/>
+    <rect x="66" y="-10" width="10" height="20" rx="2" fill="#A3401B"/>
+    <rect x="76" y="-2" width="30" height="4" fill="#5B6675"/>
+    <path d="M74 8l-6 22h10l6-20z" fill="#742C11"/>
+  </g>
+  <g transform="translate(44 176) rotate(-14)">
+    <rect x="0" y="-5" width="28" height="10" rx="3" fill="#F2B632"/>
+    <path d="M28-5h14l-6 10h-8z" fill="#B8C1CB"/>
+  </g>
+</svg>

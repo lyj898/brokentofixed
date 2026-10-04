@@ -1,0 +1,70 @@
+---
+/** The four steps of how it works, each with its own illustration. */
+import { company } from '../lib/data';
+
+interface Props {
+  /** Show the longer explanation under each step (the How it works page). */
+  long?: boolean;
+}
+
+const { long = false } = Astro.props;
+
+const steps = [
+  {
+    illo: 'step-enquiry',
+    alt: 'A phone showing the enquiry form, with a paper plane flying off',
+    title: 'Tell us the job',
+    body: 'What needs doing, the property and roughly where it is. A minute on the form.',
+    more: 'Through the form on any page: the job or jobs, a short description, the property type, the area, when you need it, and a phone or WhatsApp number. You don’t need photos to send it, but have some ready, as the handyman may ask.',
+  },
+  {
+    illo: 'step-match',
+    alt: 'An enquiry travelling from a laptop on a desk to a toolbox',
+    title: 'We pass it to a partner',
+    body: 'Usually within one working day, to a partner handyman who takes on that kind of job.',
+    more: `The team behind ${company.parentBrand} reads every enquiry, usually within one working day, and passes it to a partner handyman who takes on that kind of job. If something is unclear, we may contact you first.`,
+  },
+  {
+    illo: 'step-quote',
+    alt: 'A written quote with a price box, beside a calendar with a day marked',
+    title: 'You get a quote',
+    body: 'The handyman contacts you, asks about the job, and gives you a price.',
+    more: 'The handyman gets in touch to ask about the job and arrange a time. Small jobs can often be priced from a description and photos; others need a look first. The quote should say what’s included, such as parts and any return visit.',
+  },
+  {
+    illo: 'step-fixed',
+    alt: 'A house with a tick beside it: the job done',
+    title: 'It gets fixed',
+    body: 'If you go ahead, you book with the handyman, who does the job.',
+    more: 'There’s no obligation to go ahead. If you do, you book with the handyman, who does the job and settles the bill with you.',
+  },
+];
+---
+
+{long ? (
+  <ol class="space-y-10">
+    {steps.map((s, i) => (
+      <li class="grid items-center gap-6 sm:grid-cols-[220px_1fr]">
+        <img src={`/illo/${s.illo}.svg`} alt={s.alt} width="240" height="170" loading="lazy" decoding="async" class="h-auto w-full max-w-[220px]" />
+        <div>
+          <p class="text-sm font-semibold text-brand">Step {i + 1}</p>
+          <h2 class="mt-1 text-xl font-semibold">{s.title}</h2>
+          <p class="mt-2 leading-relaxed text-ink-muted">{s.more}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+) : (
+  <ol class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    {steps.map((s, i) => (
+      <li class="rounded-card border border-line bg-surface p-5">
+        <img src={`/illo/${s.illo}.svg`} alt={s.alt} width="240" height="170" loading="lazy" decoding="async" class="mx-auto h-auto w-full max-w-[220px]" />
+        <div class="mt-3 flex items-baseline gap-3">
+          <span class="text-2xl font-semibold text-ink-faint">{i + 1}</span>
+          <h3 class="font-semibold">{s.title}</h3>
+        </div>
+        <p class="mt-2 text-sm leading-relaxed text-ink-muted">{s.body}</p>
+      </li>
+    ))}
+  </ol>
+)}

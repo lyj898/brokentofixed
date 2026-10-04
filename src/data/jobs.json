@@ -1,0 +1,456 @@
+[
+  {
+    "slug": "furniture-assembly",
+    "name": "Furniture assembly",
+    "serviceName": "Furniture assembly",
+    "metaTitle": "Furniture Assembly Singapore | Beds, Wardrobes, Desks",
+    "metaDescription": "Furniture assembly in Singapore: flat-pack beds, wardrobes, desks and shelving put together by a partner handyman. One enquiry, and you get a quote.",
+    "h1": "Furniture assembly in Singapore",
+    "summary": "Flat-pack and online-order furniture put together, levelled and fixed to the wall where it needs it, by a partner handyman.",
+    "intro": [
+      "Flat-pack furniture is cheap to ship and slow to build. A wardrobe can arrive as a hundred and fifty parts and a booklet of drawings, and the hours it takes are hours most people would rather spend elsewhere, especially in a new flat with ten other boxes waiting.",
+      "Tell us what you've bought and where it's going, and we'll pass the job to a partner handyman. The handyman quotes, brings the tools, puts it together, and fixes tall pieces to the wall so they can't tip."
+    ],
+    "tasks": [
+      { "name": "Beds and bed frames", "body": "Platform beds, storage beds with gas-lift bases, bunk beds and children's loft beds. Storage beds take longest, because the lift mechanism has to be set to the mattress weight." },
+      { "name": "Wardrobes and cabinets", "body": "Hinged and sliding wardrobes, shoe cabinets, TV consoles and sideboards, with doors hung and adjusted so they close evenly." },
+      { "name": "Desks and office chairs", "body": "Writing desks, sit-stand desks with motor frames, gaming desks, and office chairs, including desks for a home office or a small office fit-out." },
+      { "name": "Shelving and bookcases", "body": "Open shelving, bookcases and storage units, levelled on uneven floors and anchored to the wall when they're tall or will hold heavy things." },
+      { "name": "Dining and outdoor sets", "body": "Dining tables, chairs, benches and balcony sets, including extendable tables whose runners need adjusting." },
+      { "name": "Taking furniture apart", "body": "Dismantling a bed or wardrobe so it fits through a door or into a lift, before a move or before it's thrown out." }
+    ],
+    "tasksNote": "It doesn't matter where the furniture came from: a Swedish flat-pack store, a local furniture shop or an online marketplace. Mention the brand and model, or send a link, and the handyman can see how big a job it is.",
+    "scope": {
+      "small": ["Building flat-pack furniture you've bought", "Anchoring a tall unit to the wall", "Adjusting doors and drawers that don't close", "Dismantling a piece for a move"],
+      "bigger": ["Built-in wardrobes made to measure", "Carpentry that changes the room's layout", "Removing built-in cabinets fixed to walls and floors"],
+      "note": "Built-in carpentry made to measure is a renovation job, not an assembly one."
+    },
+    "priceFactors": [
+      "How many pieces there are, and how big each one is. A bedside table and a three-door wardrobe are very different jobs.",
+      "How complicated each piece is. Sliding doors, gas-lift beds and motorised desks take longer than a plain bookcase.",
+      "Whether anything needs fixing to the wall, and what the wall is made of.",
+      "Whether the furniture has to be carried up, or the old furniture taken apart first.",
+      "Whether you need it done on a particular day or time."
+    ],
+    "photos": [
+      "The product name or a link to the listing, for each piece.",
+      "The room it's going in, with the spot marked if it's tight.",
+      "The wall behind any tall piece, if you want it anchored."
+    ],
+    "prepare": [
+      "Leave the boxes unopened in the room where the furniture will stand, so no parts get lost.",
+      "Clear a space on the floor about twice the size of the finished piece.",
+      "Find the assembly instructions, or the product's name if they're missing.",
+      "Check the furniture will fit through the bedroom door, and up the stairs if there are any."
+    ],
+    "onTheDay": [
+      "The handyman checks the parts against the list before starting, since missing pieces are easier to chase before the build than halfway through.",
+      "Each piece is assembled, levelled and checked: doors aligned, drawers running, legs tight.",
+      "Tall pieces are fixed to the wall with the brackets that came with them, or suitable ones the handyman brings.",
+      "Packaging is flattened and left for you, or taken away if you've agreed that in the quote."
+    ],
+    "afterwards": "Flat-pack joints settle in the first few weeks. Tighten the cam locks and screws once after a month, and don't move a built wardrobe across the room in one piece: take the doors off first, or have it moved by someone who knows how.",
+    "premises": {
+      "hdb": "Bedrooms in HDB flats are compact, so tall wardrobes often have to be built where they'll stand. Walls are usually concrete, which holds anti-tip brackets well once drilled.",
+      "condo": "Many condos ask you to book the service lift and register a contractor before work. Check with the management office before the visit date.",
+      "landed": "More space and more rooms usually means more pieces. Stairs can make it easier to carry boxes up and build upstairs than to carry a finished piece.",
+      "office": "Desks, chairs, storage and meeting tables, often several of each. Work can be scheduled after hours or on a weekend so the office keeps running."
+    },
+    "faqs": [
+      { "q": "Can the handyman bring the furniture from the shop?", "a": "Furniture assembly is the building part. If you need the furniture collected as well, say so in the enquiry and we'll check whether the partner can do it." },
+      { "q": "What if a part is missing or broken?", "a": "The handyman checks the parts before starting. If something is missing, most retailers send spares free, and the handyman can finish that piece on a return visit." },
+      { "q": "Will my wardrobe be fixed to the wall?", "a": "Tall pieces should be. Furniture tipping over is a real risk with children in the home, and most flat-pack wardrobes come with an anti-tip kit for this reason. Ask for it in the enquiry." },
+      { "q": "Can you take my old furniture away?", "a": "The handyman can take it apart. For getting rid of it, Junk to Clear, run by the same team, collects old furniture." }
+    ],
+    "disposal": "Replacing an old bed or wardrobe? The handyman can take it apart, and Junk to Clear, run by the same team as BrokenToFixed, can collect it.",
+    "illoAlt": "A half-built flat-pack wardrobe with its door leaning against it, an open box of parts, an Allen key and a screwdriver"
+  },
+  {
+    "slug": "wall-mounting",
+    "name": "Wall mounting",
+    "serviceName": "TV and wall mounting",
+    "metaTitle": "TV Wall Mounting Singapore | Shelves, Curtain Rods",
+    "metaDescription": "TV wall mounting in Singapore, plus shelves, curtain rods, blinds, mirrors and frames. A partner handyman quotes, drills and fixes it level.",
+    "h1": "TV wall mounting, shelves and curtain rods",
+    "summary": "TVs, shelves, curtain rods, blinds, mirrors and frames fixed to the wall, level and secure, by a partner handyman.",
+    "intro": [
+      "Anything that hangs on a wall depends on the hole behind it. The right plug in concrete holds a large TV for years; the wrong one in a hollow partition wall can let a loaded shelf drop. Most of the job is knowing which wall you have and drilling it cleanly.",
+      "Tell us what needs mounting and where, and we'll pass it to a partner handyman, who quotes, brings the drill and fixings, and puts it up level."
+    ],
+    "tasks": [
+      { "name": "TV wall mounting", "body": "Fixed, tilting and full-motion brackets for TVs of most sizes, at the height you choose, with cables tidied into a surface trunking channel if you want them out of sight." },
+      { "name": "Shelves", "body": "Floating shelves, bracket shelves and wall cabinets, levelled and fixed with plugs and screws rated for what they'll carry." },
+      { "name": "Curtain rods and tracks", "body": "Rods, ceiling-mounted tracks and double rods for a curtain with a sheer, fixed so they don't sag in the middle." },
+      { "name": "Blinds", "body": "Roller, Venetian and Roman blinds, fitted inside the window frame or above it, with the brackets lined up so the blind runs straight." },
+      { "name": "Mirrors, frames and art", "body": "Heavy mirrors, gallery walls and large frames, hung level and spaced the way you've planned." },
+      { "name": "Hooks, rails and racks", "body": "Coat hooks, towel rails, kitchen rails, bicycle hooks and wall-mounted drying racks." }
+    ],
+    "tasksNote": "Bring your own bracket or ask the handyman to bring one. If you're buying it yourself, check its weight rating and the VESA pattern on the back of the TV first.",
+    "scope": {
+      "small": ["Mounting a TV on a bracket", "Putting up shelves, rods and blinds", "Hanging mirrors and frames", "Tidying cables in surface trunking"],
+      "bigger": ["Hiding cables inside a solid wall", "Building a TV feature wall", "Moving power points to a new spot"],
+      "note": "Chasing cables into a solid wall or building a feature wall is renovation work."
+    },
+    "priceFactors": [
+      "What's being mounted, and how heavy it is. A large TV on a full-motion arm needs more fixings than a picture frame.",
+      "The wall: concrete, brick, a hollow partition or tiles each need different drill bits and plugs.",
+      "How many items there are. Several shelves and rods in one visit usually cost less than separate visits.",
+      "Whether you want cables hidden in trunking, and how far they run.",
+      "Whether the handyman brings the bracket or you supply it."
+    ],
+    "photos": [
+      "The wall, with the area where the item will go.",
+      "The item and its bracket, or the TV's model number.",
+      "For blinds and rods, the window with its frame and the wall above it."
+    ],
+    "prepare": [
+      "Decide on the height and position, and mark it with masking tape so you can see it from the sofa or bed.",
+      "Move furniture away from the wall, leaving about a metre to work in.",
+      "Have the bracket, rods or blinds unboxed, with every part to hand.",
+      "Know where you think pipes and wires run in that wall, if you have the floor plan."
+    ],
+    "onTheDay": [
+      "The handyman checks the wall type and scans for pipes and cables before drilling.",
+      "Positions are marked with a level and agreed with you before the first hole.",
+      "Holes are drilled with a vacuum or a dust catcher, then plugged and fixed.",
+      "The item is mounted, checked for level and tested: the TV arm moved, the blind run up and down."
+    ],
+    "afterwards": "Don't hang more on a shelf or rail than it was fixed for; ask on the day what each one will hold. If you ever take a TV down, keep the bracket's screws in a bag taped to the bracket, so it goes back up with the right ones.",
+    "premises": {
+      "hdb": "Most HDB walls are reinforced concrete or precast panels, which hold well but are hard to drill. Bedroom partitions in some flats are lighter, and the handyman will check before choosing fixings.",
+      "condo": "Condo walls are often drywall partitions, which need hollow-wall anchors or a fix into the studs. Many condos also limit drilling to set hours.",
+      "landed": "Older landed houses can have brick or plastered walls that crumble around a hole, so the handyman may use longer fixings or chemical anchors.",
+      "office": "Screens in meeting rooms, whiteboards, signage and shelving. Office partitions are usually hollow, and building management may need to approve the work first."
+    },
+    "faqs": [
+      { "q": "Can my TV be mounted on a hollow wall?", "a": "Often, yes, with the right anchors or by fixing into the frame behind the board. For a large TV on a full-motion arm, the handyman may suggest a fixed bracket instead, or a different wall." },
+      { "q": "How high should a TV be mounted?", "a": "A common guide is to put the middle of the screen at eye level when you're seated. Mark it with tape before the visit and sit down to check." },
+      { "q": "Can the cables be hidden?", "a": "They can run in a slim trunking channel painted to match the wall. Hiding them inside the wall is a bigger job that involves chasing the plaster." },
+      { "q": "Will drilling damage my tiles?", "a": "Tiles can crack if drilled carelessly. The handyman uses a tile bit, tape over the spot and no hammer action until the drill is through the tile." }
+    ],
+    "illoAlt": "A TV on a wall bracket above a low cabinet, with a floating shelf, a level and a drill"
+  },
+  {
+    "slug": "doors-and-locks",
+    "name": "Doors and locks",
+    "serviceName": "Door and lock repair",
+    "metaTitle": "Door and Lock Repair Singapore | Hinges, Handles",
+    "metaDescription": "Door and lock repair in Singapore: sagging doors, loose hinges, stiff handles, lock changes and digital lock installs, quoted by a partner handyman.",
+    "h1": "Door and lock repair in Singapore",
+    "summary": "Doors that stick, sag or won't latch put right, and handles, hinges and locks repaired or replaced, by a partner handyman.",
+    "intro": [
+      "A door that drags on the floor, won't latch or needs a shoulder to close usually has a small cause: a hinge screw that has pulled loose, a strike plate that has shifted, or wood that has swollen in the humidity. Left alone, the hinge tears the frame and the small job becomes a bigger one.",
+      "Tell us which door and what it's doing, and we'll pass it to a partner handyman, who quotes, finds the cause and fixes it."
+    ],
+    "tasks": [
+      { "name": "Sagging and sticking doors", "body": "Doors that rub the frame or scrape the floor, re-hung on tightened or replaced hinges, or planed where swelling is the cause." },
+      { "name": "Hinges", "body": "Loose, squeaky or broken hinges replaced, with stripped screw holes filled so the new screws bite." },
+      { "name": "Handles and latches", "body": "Stiff, loose or broken lever handles and latches replaced, and strike plates moved so the door catches." },
+      { "name": "Lock changes", "body": "Cylinders and mortice locks replaced after you lose a key or move into a home that someone else had keys to." },
+      { "name": "Digital locks", "body": "Digital locks you've bought fitted to the main door or a bedroom door, which usually means cutting the door to the lock's template." },
+      { "name": "Closers, stoppers and sliding doors", "body": "Door closers adjusted so they don't slam, stoppers fitted, and sliding doors and wardrobe doors put back on their tracks." }
+    ],
+    "tasksNote": "Locked out right now? Say so in the enquiry, but know that this is a quote-and-book service, not an emergency call-out, so it suits jobs that can wait a day or two.",
+    "scope": {
+      "small": ["Re-hanging a sagging door", "Replacing handles, hinges and locks", "Fitting a digital lock", "Fixing a sliding door that jumps its track"],
+      "bigger": ["Replacing a whole door and frame", "Changing a main door or gate", "Widening a doorway"],
+      "note": "Replacing a door frame or a main gate is closer to renovation than repair."
+    },
+    "priceFactors": [
+      "What's wrong, and how many doors. Several doors in one visit usually works out better than one at a time.",
+      "Whether parts need replacing, and whether you supply them or the handyman does.",
+      "For digital locks, the lock's model and the door: a solid timber door, a hollow-core door and a metal gate are all fitted differently.",
+      "Whether the frame is damaged and needs repair before the door will hang straight.",
+      "How soon you need it."
+    ],
+    "photos": [
+      "The whole door, closed, showing where it rubs or the gap it leaves.",
+      "The hinges and the lock or handle, close up.",
+      "For a digital lock, the box with the model name, and the edge of the door."
+    ],
+    "prepare": [
+      "Clear the space either side of the door so it can be swung fully open and lifted off its hinges if needed.",
+      "Have every key for the lock to hand, and the new lock or handle if you bought one.",
+      "For a digital lock, read the lock's door-thickness range and check your door against it.",
+      "Tell anyone at home that the door may be off its hinges for a while."
+    ],
+    "onTheDay": [
+      "The handyman opens and closes the door a few times, looks at the hinges, latch and frame, and finds where it binds.",
+      "Loose screws are tightened or the holes filled; worn parts are swapped for new ones.",
+      "The door is re-hung if needed and adjusted until it closes easily and latches.",
+      "New locks are tested with every key, and digital locks are set up with you there to register your codes and fingerprints."
+    ],
+    "afterwards": "Oil hinges once or twice a year, and keep sliding door tracks free of grit. If a timber door starts sticking again in the wet months, it may be swelling; it usually eases when the weather dries.",
+    "premises": {
+      "hdb": "Main doors and gates in HDB flats face the common corridor. Changing the look of the main door may be subject to rules, so check before swapping a whole door; a lock or handle on it is a smaller matter.",
+      "condo": "Main doors often open onto a lift lobby. Check with the management office before changing anything visible from it, and book the visit within its working hours.",
+      "landed": "More doors, and more kinds: timber, glass sliding doors to the garden, and gates. Exposed doors swell more in rain and may need planing rather than new hinges.",
+      "office": "Door closers, push bars, office locks and meeting-room doors that won't stay shut. Fire doors must close by themselves, so their closers shouldn't be removed."
+    },
+    "faqs": [
+      { "q": "Can you install a digital lock I bought online?", "a": "Usually, yes. Send the model in the enquiry. The handyman will check it fits your door's thickness and type before the visit." },
+      { "q": "My door sticks only in the rainy season. Does it need planing?", "a": "Possibly not. Timber swells with humidity and shrinks back. Tightening the hinges often cures it; planing is for doors that stick all year." },
+      { "q": "Do you do emergency lockouts?", "a": "No. Enquiries are read during working hours and quoted by the partner, so this suits repairs that can wait a day or two." },
+      { "q": "Can the handyman fix a sliding wardrobe door?", "a": "Yes, in most cases: the rollers are adjusted or replaced and the door is set back on its track." }
+    ],
+    "illoAlt": "A door with one hinge hanging loose, a new handle and lock beside it, and a screwdriver"
+  },
+  {
+    "slug": "silicone-and-grout",
+    "name": "Silicone and grout",
+    "serviceName": "Silicone and grout repair",
+    "metaTitle": "Silicone and Grout Repair Singapore | Resealing",
+    "metaDescription": "Silicone resealing and grout repair in Singapore for showers, sinks, bathtubs and kitchen tops. A partner handyman removes the old and seals it again.",
+    "h1": "Silicone resealing and grout repair",
+    "summary": "Mouldy, peeling or cracked silicone and grout cut out and replaced around showers, sinks, baths and worktops, by a partner handyman.",
+    "intro": [
+      "Silicone and grout are what stop water getting behind tiles and under worktops. In Singapore's damp air they go black, peel or crack sooner than you'd think, and once they let water through, the damage behind them grows quietly.",
+      "Tell us where it's failing and we'll pass the job to a partner handyman, who cuts out the old sealant, cleans the joint and seals it again."
+    ],
+    "tasks": [
+      { "name": "Shower and bathtub resealing", "body": "The joint where the tray or tub meets the tiles, the shower screen's base and the corners, cut out and resealed with mould-resistant sanitary silicone." },
+      { "name": "Kitchen worktops and sinks", "body": "The line where the worktop meets the wall, around the sink and the hob cut-out, resealed so water from the tap can't get underneath." },
+      { "name": "Basins and toilets", "body": "The bead around the base of the toilet and the edge of the basin, renewed where it has gone black or come away." },
+      { "name": "Grout repair", "body": "Cracked, crumbling or stained grout between floor and wall tiles raked out and replaced, either in patches or across a wall." },
+      { "name": "Windows and frames", "body": "Silicone around the inside of window frames where it has cracked and lets a draught or damp in." }
+    ],
+    "tasksNote": "Black spots under the surface of the silicone are mould that has grown into it. Cleaning products bleach the top but don't reach it, so the lasting fix is to replace the bead.",
+    "scope": {
+      "small": ["Resealing a shower, bath or sink", "Re-grouting a patch of tiles", "Renewing sealant around a toilet or window", "Replacing a cracked bead on a worktop"],
+      "bigger": ["Re-tiling a bathroom", "Waterproofing a floor that leaks into the flat below", "Replacing a worktop"],
+      "note": "A floor that leaks into the unit below needs waterproofing, a bigger job than resealing."
+    },
+    "priceFactors": [
+      "How many joints, and how long. A shower corner and a whole bathroom are different jobs.",
+      "How hard the old sealant is to remove, and whether there's mould behind it.",
+      "For grout, the area, whether it's floor or wall, and whether the tiles need cleaning first.",
+      "Colour matching, if you want the new grout to match the old.",
+      "Whether several areas, such as the kitchen and two bathrooms, are done on the same visit."
+    ],
+    "photos": [
+      "Each joint you want redone, close enough to see the condition.",
+      "A wider shot showing the length of the joint.",
+      "Any water stains or bubbling paint nearby, which can mean water is getting behind."
+    ],
+    "prepare": [
+      "Stop using the shower or bath a few hours before the visit, so the joints are dry.",
+      "Clear the bathroom of bottles, mats and anything on the tub's edge or the worktop.",
+      "Plan to leave the sealed area dry for the curing time the handyman gives you, usually a day.",
+      "If you have a second bathroom, plan to use it that day."
+    ],
+    "onTheDay": [
+      "The old silicone is cut out with a blade and the joint scraped clean of residue.",
+      "The joint is cleaned and dried, and treated where there was mould.",
+      "A new bead of sanitary silicone is run and tooled smooth, or the grout is packed in and wiped down.",
+      "The handyman tells you how long to keep water off it before using the shower or sink."
+    ],
+    "afterwards": "Wipe the silicone dry after showers and keep the bathroom ventilated, with the window open or the fan on. Mould needs damp to grow back, and a dry joint stays white far longer.",
+    "premises": {
+      "hdb": "Bathrooms in HDB flats are often small and poorly ventilated, which is where silicone fails first. If there's a stain on the ceiling of the flat below, the problem may be waterproofing under the floor, not just the sealant.",
+      "condo": "Shower screens and worktops in condos are often stone or glass, which need neutral-cure silicone that won't stain them. Mention the material in the enquiry.",
+      "landed": "More bathrooms, and often older ones. Outdoor joints around windows and doors take sun and rain and need resealing more often than indoor ones.",
+      "office": "Pantry sinks and washrooms used by many people. Work can be done after hours so the room can cure overnight."
+    },
+    "faqs": [
+      { "q": "Can you seal over the old silicone?", "a": "It's better not to. New silicone doesn't bond to old silicone, so it peels off, and any mould underneath carries on growing. The old bead should be cut out first." },
+      { "q": "How long before I can use the shower?", "a": "Usually about a day, but it depends on the product. The handyman will tell you on the day." },
+      { "q": "Why does the silicone keep going black?", "a": "Mould grows into it where the joint stays damp. Drying it after use and better ventilation slow it down; replacing it removes what's already there." },
+      { "q": "There's a leak into the flat below. Will resealing fix it?", "a": "Only if the leak comes from a failed joint. A leak through the floor often needs waterproofing, which is a bigger job. The handyman can tell you which it looks like." }
+    ],
+    "illoAlt": "A shower corner where blackened silicone is being cut out and a fresh white bead is being run from a sealant gun"
+  },
+  {
+    "slug": "plumbing-repairs",
+    "name": "Small plumbing",
+    "serviceName": "Plumbing repairs",
+    "metaTitle": "Plumbing Repairs Singapore | Taps, Toilets, Drains",
+    "metaDescription": "Small plumbing repairs in Singapore: leaking taps, running toilets, choked sinks and drains, shower sets. A partner handyman quotes and fixes it.",
+    "h1": "Small plumbing repairs: taps, toilets and drains",
+    "summary": "Leaking taps, running toilets, slow drains and worn shower sets repaired or replaced, by a partner handyman.",
+    "intro": [
+      "Most household plumbing problems start small: a tap that drips, a cistern that keeps running, a basin that drains slowly. Each wastes water and gets worse, and most are an hour's work for someone with the right parts.",
+      "Tell us what's leaking, running or blocked, and we'll pass it to a partner handyman, who quotes, finds the cause and fixes it."
+    ],
+    "tasks": [
+      { "name": "Taps and mixers", "body": "Dripping taps fixed by replacing washers or cartridges, and old taps and kitchen mixers swapped for new ones." },
+      { "name": "Toilets and cisterns", "body": "Cisterns that keep running or won't fill, flush buttons that stick, wobbly toilet bowls, and seats and bidet sprays replaced." },
+      { "name": "Choked sinks and drains", "body": "Slow kitchen sinks, basins, floor traps and shower drains cleared, and bottle traps under the basin cleaned or replaced." },
+      { "name": "Shower sets", "body": "Shower heads, hoses, rails and mixers replaced, and leaking connections resealed." },
+      { "name": "Leaks under the sink", "body": "Dripping waste pipes, loose connections and worn flexible hoses under kitchen and bathroom sinks found and fixed." },
+      { "name": "Fixtures", "body": "Basins, toilet roll holders, soap dishes and bathroom accessories fitted or replaced." }
+    ],
+    "tasksNote": "If water is coming through a ceiling or a wall, turn off the water at the meter or the stop valve under the sink before you do anything else, and say so in the enquiry.",
+    "scope": {
+      "small": ["Fixing a dripping tap or a running cistern", "Clearing a slow sink or floor trap", "Replacing a shower set or a tap", "Fixing a leak under the sink"],
+      "bigger": ["Replacing pipes hidden in walls or floors", "Moving a toilet or sink", "Re-piping a flat"],
+      "note": "Moving fixtures or replacing concealed pipes is a renovation job."
+    },
+    "priceFactors": [
+      "What's wrong. A washer is quicker than replacing a whole cistern mechanism.",
+      "Whether parts are needed, and whether you've bought them or the handyman brings them.",
+      "For blockages, where the blockage is and how far into the pipe it sits.",
+      "Access: a tap behind a fixed cabinet or a cistern boxed into the wall takes longer.",
+      "How many fixtures, and how soon you need the visit."
+    ],
+    "photos": [
+      "The tap, toilet or drain, and the leak or blockage if you can see it.",
+      "The pipes under the sink, with the cabinet door open.",
+      "The brand and model of a tap or cistern you want replaced, if it's visible."
+    ],
+    "prepare": [
+      "Find the water stop valves under the sink and near the toilet, and the main valve at the meter, and check they turn.",
+      "Empty the cabinet under the sink and put a towel down.",
+      "Have any replacement tap or shower set you bought, still in its box.",
+      "Stop pouring chemical drain cleaners down a blocked drain before the visit, so the handyman isn't working in them."
+    ],
+    "onTheDay": [
+      "The handyman finds the cause: which seal, valve or joint is failing, or where the blockage is.",
+      "The water is turned off at the nearest valve, and the part is repaired or replaced.",
+      "The water is turned back on and the repair checked for drips under pressure.",
+      "Blocked drains are run with plenty of water to check they're clear."
+    ],
+    "afterwards": "Keep fat and food scraps out of the kitchen sink and hair out of the shower drain; a strainer costs little and prevents most blockages. Turn each stop valve once or twice a year, so it hasn't seized when you need it.",
+    "premises": {
+      "hdb": "HDB flats have a water meter outside the main door with a valve that shuts off the whole flat. A blockage in the common stack pipe that serves the block is the town council's to clear, not the flat owner's.",
+      "condo": "A leak that reaches the unit below or a common area should be reported to the management office as well as fixed. Some condos have their own rules on who may work on shared pipes.",
+      "landed": "Landed homes have their own pipes from the meter to the house, outdoor taps and more bathrooms, and older houses can have galvanised pipes that corrode from inside.",
+      "office": "Pantry sinks, washroom taps and toilets used all day. Repairs can be scheduled before opening hours, and the landlord may handle anything outside your unit."
+    },
+    "faqs": [
+      { "q": "My toilet keeps running. Is that a big job?", "a": "Usually not. A running cistern is most often a worn flush valve seal or a fill valve that doesn't shut off, and both can be replaced without taking the toilet out." },
+      { "q": "Can you clear a blocked floor trap?", "a": "Yes, in most cases. If the blockage is in the common pipe shared with other flats, it's for the town council or management office to clear." },
+      { "q": "Can I buy the tap myself?", "a": "Yes. Check that it suits your sink and the pipes under it, or send the handyman the link before buying." },
+      { "q": "Can you replace my water heater?", "a": "Mention it in the enquiry, with the heater's type and model. We'll check whether the partner takes on that job." }
+    ],
+    "illoAlt": "A dripping tap over a basin, with the pipes under the sink, a wrench and a bucket"
+  },
+  {
+    "slug": "electrical-repairs",
+    "name": "Small electrical",
+    "serviceName": "Electrical repairs",
+    "metaTitle": "Electrical Repairs Singapore | Lights, Sockets, Fans",
+    "metaDescription": "Small electrical jobs in Singapore: lights, switches, sockets and ceiling fans replaced or installed. A partner quotes and does the work.",
+    "h1": "Small electrical jobs: lights, sockets and ceiling fans",
+    "summary": "Lights, switches, sockets and ceiling fans replaced or installed, and faulty fittings looked at, through a partner.",
+    "intro": [
+      "Household electrical jobs tend to arrive in a list: a light that flickers, a fan you bought that's still in its box, a socket that went dead, a switch that sparks. None of them is big, but none is a job to guess at.",
+      "Tell us what you need, and we'll pass it to a partner who quotes and does the work."
+    ],
+    "tasks": [
+      { "name": "Lights", "body": "Ceiling lights, downlights, pendant lights and LED panels replaced or installed in place of an existing fitting, and flickering lights looked at." },
+      { "name": "Ceiling fans", "body": "Ceiling fans you've bought installed at an existing ceiling point, and old fans taken down and replaced." },
+      { "name": "Switches and sockets", "body": "Cracked, loose or dead switches and power sockets replaced, and single sockets swapped for doubles." },
+      { "name": "Tripping power", "body": "Circuits that keep tripping traced to the appliance or fitting that's causing it." },
+      { "name": "Small fittings", "body": "Doorbells, bathroom exhaust fans and kitchen hood power points replaced like for like." }
+    ],
+    "tasksNote": "If a socket or switch is scorched, smells of burning or is hot to the touch, switch it off at the distribution board and don't use it until it's been looked at.",
+    "scope": {
+      "small": ["Replacing a light or a ceiling fan", "Swapping a switch or a socket", "Finding what keeps tripping the power", "Replacing a bathroom exhaust fan"],
+      "bigger": ["Rewiring a flat", "Adding new power points and circuits", "Replacing the distribution board"],
+      "note": "New circuits and rewiring are a bigger job than a repair."
+    },
+    "priceFactors": [
+      "What's being installed or fixed, and how many. Several lights in one visit usually works out better than one at a time.",
+      "The fitting: a heavy fan or a chandelier takes longer than a downlight.",
+      "Ceiling height, and whether a tall ladder or scaffold is needed.",
+      "Whether there's an existing point to connect to.",
+      "Whether finding a fault takes testing across several circuits."
+    ],
+    "photos": [
+      "The existing light, fan, switch or socket.",
+      "The new fitting, or its box, if you've bought one.",
+      "For a fan, the ceiling where it will go, and the height of the room if it's high."
+    ],
+    "prepare": [
+      "Know where the distribution board is and that it can be reached.",
+      "Have the new fittings unboxed with their instructions.",
+      "Clear the area under any ceiling work, and cover furniture you can't move.",
+      "Note which circuits trip and what was switched on when they did."
+    ],
+    "onTheDay": [
+      "The power to the circuit is switched off at the distribution board before any work starts.",
+      "The old fitting is removed and the new one connected and fixed.",
+      "Power is restored and the fitting tested: lights on, fan at each speed, sockets live.",
+      "For tripping, circuits are tested one at a time until the fault is found."
+    ],
+    "afterwards": "Test the residual current device at the distribution board every few months using its test button; it should trip at once. If the same circuit keeps tripping, unplug things one at a time to find the cause, and say what you found when you enquire again.",
+    "premises": {
+      "hdb": "HDB flats come with a distribution board near the main door and ceiling points in each room, so most lights and fans go up at an existing point.",
+      "condo": "Condo units often have false ceilings with downlights and concealed wiring. The management office may need to know before work that affects shared areas.",
+      "landed": "Bigger houses mean more lights, high ceilings in living rooms and outdoor fittings in the garden and porch, which need fittings rated for the weather.",
+      "office": "Lighting panels, pantry sockets and meeting room fittings. Work affecting the whole office's power can be done after hours, and the landlord may need to approve it."
+    },
+    "faqs": [
+      { "q": "Can you install a ceiling fan I bought online?", "a": "Usually, yes, at an existing ceiling point. Send the model in the enquiry so it can be checked for weight and mounting." },
+      { "q": "My power keeps tripping. What causes that?", "a": "Often a faulty appliance, such as a kettle, water heater or washing machine, or water getting into an outdoor socket. Testing finds which one." },
+      { "q": "Can you add a new power point?", "a": "Say what you need in the enquiry. Adding new points and circuits is a bigger job than replacing a fitting, and we'll check with the partner." },
+      { "q": "Do I need to be home?", "a": "Yes, or someone needs to let the partner in and show where the distribution board is." }
+    ],
+    "illoAlt": "A ceiling fan and a pendant light, a wall switch with its cover off, and a stepladder"
+  },
+  {
+    "slug": "appliance-repair",
+    "name": "Appliance repair",
+    "serviceName": "Appliance repair",
+    "metaTitle": "Appliance Repair Singapore | Washers, Fridges, Hobs",
+    "metaDescription": "Appliance repair and installation in Singapore: washing machines, fridges, dryers, hobs and hoods. Tell us the model and a partner quotes.",
+    "h1": "Appliance repair and installation",
+    "summary": "Washing machines, dryers, fridges, hobs and cooker hoods repaired, or new ones installed, through a partner.",
+    "intro": [
+      "When a washing machine stops mid-cycle or a fridge stops cooling, the first question is whether it's worth repairing. That depends on what's failed, how old the machine is, and whether parts for it are still made.",
+      "Tell us the appliance, its brand and model, and what it's doing, and we'll pass it to a partner, who quotes the repair or the installation."
+    ],
+    "tasks": [
+      { "name": "Washing machines", "body": "Machines that won't drain, won't spin, leak or show an error code, and new machines installed with the inlet hose, drain and levelling done." },
+      { "name": "Dryers", "body": "Dryers that run but don't heat, or that stop mid-cycle, and new dryers stacked on a washer with the proper kit." },
+      { "name": "Fridges", "body": "Fridges that don't cool, leak water inside or build up ice, checked to find whether it's a seal, a fan or something that's not worth fixing." },
+      { "name": "Hobs and cooker hoods", "body": "Hobs that won't ignite and hoods with dead fans or lights repaired, and new ones fitted into the existing cut-out." },
+      { "name": "Other appliances", "body": "Dishwashers, ovens and water dispensers. Say what it is and what's wrong, and we'll check whether the partner handles it." }
+    ],
+    "tasksNote": "Gas hobs connected to town gas or a gas cylinder should only be connected or disconnected by people who do gas work. Say in the enquiry if your hob is gas, and we'll check with the partner.",
+    "scope": {
+      "small": ["Diagnosing a washer, dryer or fridge", "Replacing a worn part", "Installing a new washer or dryer", "Fitting a hob or hood into the same space"],
+      "bigger": ["Moving the kitchen's layout", "Cutting a new space in a worktop", "Moving a washer to a new room with new pipes"],
+      "note": "Moving appliances to new spots usually means new pipes, wiring and carpentry."
+    },
+    "priceFactors": [
+      "The appliance, its brand and model, and what's wrong with it.",
+      "Whether the fault can be found and fixed in one visit, or a part has to be ordered.",
+      "The cost of the part, which varies widely between brands and models.",
+      "For installation, whether the space, pipes and power are ready, and whether the old machine needs disconnecting.",
+      "Whether it's built in, which makes it slower to take out and put back."
+    ],
+    "photos": [
+      "The model plate, usually inside the door, on the back or on the side.",
+      "Any error code on the display.",
+      "For installation, the space, the tap, the drain and the power socket."
+    ],
+    "prepare": [
+      "Write down the brand, the model number and roughly how old the appliance is.",
+      "Empty a washing machine, fridge or dishwasher, and put towels down for any water left inside.",
+      "Clear the space around the appliance so it can be pulled out.",
+      "Have any warranty card or receipt to hand, in case the maker's own service should do the repair."
+    ],
+    "onTheDay": [
+      "The partner checks the fault and tells you what it is and whether it's worth repairing.",
+      "If a part is needed, the price is agreed before it's ordered or fitted.",
+      "The repair is made, or the new appliance is installed, levelled and connected.",
+      "The appliance is run through a cycle, or left running, to check it works."
+    ],
+    "afterwards": "Clean washing machine filters and dryer lint traps regularly, leave the washer door ajar between washes, and keep space behind a fridge for air to move. If an appliance is past repair, Junk to Clear can collect the old one.",
+    "premises": {
+      "hdb": "HDB kitchens and service yards are compact, and washers and dryers are often stacked. Check that the new machine fits the space, including the door's swing.",
+      "condo": "Condo kitchens often have built-in appliances in fitted cabinets. Note that in the enquiry, since taking them out takes longer.",
+      "landed": "More appliances, and sometimes older ones in an outdoor kitchen or a utility room. Machines in a wet kitchen take more humidity and corrosion.",
+      "office": "Pantry fridges, microwaves, water dispensers and dishwashers. Repairs can usually be arranged outside office hours."
+    },
+    "faqs": [
+      { "q": "Is my old appliance worth repairing?", "a": "It depends on the fault, the price of the part and the machine's age. The partner will say so if a repair isn't worth it, and you decide." },
+      { "q": "My appliance is still under warranty. Should I use you?", "a": "Check with the brand's own service first: work by anyone else may void the warranty." },
+      { "q": "Can you install a washing machine I bought?", "a": "Yes, where the tap, drain and power socket are already in place. Many shops deliver without installing, or charge to install." },
+      { "q": "Can you take my old appliance away?", "a": "The partner can disconnect it. For collection and disposal, Junk to Clear, run by the same team as BrokenToFixed, can take it." }
+    ],
+    "disposal": "Replacing an appliance that can't be saved? Junk to Clear, run by the same team as BrokenToFixed, can collect the old one.",
+    "illoAlt": "A front-loading washing machine with its door open and a fridge beside it, with a wrench and a spare part"
+  }
+]

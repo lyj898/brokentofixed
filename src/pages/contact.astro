@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { company } from '../lib/data';
+import { urls } from '../lib/urls';
+import { meta } from '../lib/seo';
+
+const path = urls.contact();
+const { title, description } = meta(
+  'Contact BrokenToFixed | Get a Handyman Quote',
+  'Ask for a handyman quote in Singapore. Tell us the job, the property and the area, and a partner handyman will contact you with a price.',
+);
+---
+
+<BaseLayout title={title} description={description} path={path} crumbs={[{ name: 'Contact', path }]} ctaHref="#main">
+  <section class="border-b border-line bg-surface">
+    <div class="wrap grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div>
+        <h1 class="max-w-3xl text-3xl font-semibold sm:text-4xl lg:text-5xl">Ask for a handyman quote</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          Tell us what needs doing and we’ll pass it to a partner handyman, who will contact
+          you and give you a quote. There’s no obligation to book.
+        </p>
+      </div>
+      <img
+        src="/illo/contact.svg"
+        alt="A clipboard with an enquiry form and a pencil, next to a toolbox"
+        width="320"
+        height="220"
+        fetchpriority="high"
+        decoding="async"
+        class="mx-auto h-auto w-full max-w-xs max-lg:hidden"
+      />
+    </div>
+  </section>
+
+  <div class="wrap grid gap-12 py-12 sm:py-16 lg:grid-cols-[1.5fr_1fr]">
+    <div>
+      <LeadForm pageName="Contact" />
+    </div>
+
+    <aside class="space-y-6">
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h2 class="font-semibold">What helps the handyman quote</h2>
+        <ul class="mt-4 space-y-2 text-sm text-ink-muted">
+          <li>What’s wrong, or what you want put up or put together</li>
+          <li>Brands and models, or links to what you’ve bought</li>
+          <li>The wall, door or fitting it involves</li>
+          <li>Photos, ready to send when the handyman asks</li>
+        </ul>
+        <p class="mt-4 text-sm leading-relaxed text-ink-muted">
+          Not sure what to call the job? Describe it. The
+          <a href={urls.handyman()} class="text-brand no-underline hover:underline">job pages</a>
+          list what each one covers.
+        </p>
+      </div>
+
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h2 class="font-semibold">Response time</h2>
+        <p class="mt-2 text-sm leading-relaxed text-ink-muted">
+          We usually reply within one working day.<br />
+          {company.operatingHoursDisplay}
+        </p>
+      </div>
+
+      <div class="rounded-card border border-line bg-surface-sunk p-6">
+        <h2 class="font-semibold">What happens to your details</h2>
+        <p class="mt-2 text-sm leading-relaxed text-ink-muted">
+          They go to the team behind {company.parentBrand}, which passes them to the partner
+          handyman who will quote you. They aren’t sold or passed to anyone else.
+          See the <a href={urls.privacy()} class="text-brand underline underline-offset-2">privacy policy</a>.
+        </p>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>

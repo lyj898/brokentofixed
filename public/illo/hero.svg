@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460">
+<path d="M40 390C20 210 220 70 600 64c380-6 590 120 560 326z" fill="#F6E7DD"/>
+  <circle cx="1080" cy="92" r="28" fill="#F6E3A8"/>
+  <g fill="#FFFFFF"><ellipse cx="230" cy="70" rx="44" ry="13"/><ellipse cx="262" cy="62" rx="26" ry="12"/><ellipse cx="900" cy="62" rx="40" ry="12"/><ellipse cx="930" cy="54" rx="24" ry="11"/></g>
+
+  <!-- the building shell -->
+  <path d="M80 120l520-56 520 56z" fill="#A3401B"/>
+  <rect x="96" y="120" width="1008" height="264" fill="#F7EFE6"/>
+  <rect x="96" y="370" width="1008" height="14" fill="#E9DCC9"/>
+  <rect x="84" y="116" width="1032" height="12" rx="3" fill="#742C11"/>
+  <rect x="352" y="128" width="10" height="256" fill="#E4D9CB"/><rect x="608" y="128" width="10" height="256" fill="#E4D9CB"/><rect x="860" y="128" width="10" height="256" fill="#E4D9CB"/>
+
+  <!-- bedroom: a wardrobe going up -->
+  <rect x="140" y="196" width="128" height="174" rx="3" fill="#EBCB9C"/>
+  <rect x="140" y="196" width="10" height="174" fill="#D9A86C"/><rect x="258" y="196" width="10" height="174" fill="#D9A86C"/>
+  <rect x="136" y="190" width="136" height="10" rx="2" fill="#C4935A"/>
+  <rect x="150" y="270" width="108" height="6" fill="#D9A86C"/>
+  <path d="M164 210h80" stroke="#B8C1CB" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(8 300 370)"><rect x="282" y="230" width="48" height="140" rx="2" fill="#D9A86C"/><rect x="289" y="238" width="34" height="124" fill="none" stroke="#C4935A" stroke-width="2"/></g>
+  <path d="M112 370v-26h40v26z" fill="#CDA472"/><path d="M112 344l-8-10h40l8 10z" fill="#B48A58"/>
+
+  <!-- living room: a TV going on the wall, a fan going up -->
+  <rect x="392" y="190" width="150" height="86" rx="6" fill="#2A2420"/>
+  <rect x="398" y="196" width="138" height="74" rx="3" fill="#36414D"/>
+  <path d="M460 196h40l-50 74h-40z" fill="#43505E"/>
+  <rect x="384" y="318" width="168" height="52" rx="4" fill="#D9A86C"/>
+  <rect x="384" y="318" width="168" height="7" rx="3" fill="#C4935A"/>
+  <rect x="460" y="276" width="14" height="42" fill="#C9D0D8"/>
+  <rect x="571" y="128" width="6" height="22" fill="#5B6675"/>
+  <ellipse cx="574" cy="154" rx="12" ry="7" fill="#3E4652"/>
+
+  <!-- stepladder and the person on it -->
+  <path d="M500 370l40-150M592 370l-40-150" stroke="#5B6675" stroke-width="7" stroke-linecap="round"/>
+  <path d="M510 330h72M520 290h52M530 252h32" stroke="#C9D0D8" stroke-width="6" stroke-linecap="round"/>
+  
+  <g transform="translate(546 290)">
+    <ellipse cx="0" cy="2" rx="26" ry="4" fill="#EAD5C6"/>
+    <rect x="-12" y="-46" width="10" height="44" rx="4" fill="#2F6F73"/>
+    <rect x="2" y="-46" width="10" height="44" rx="4" fill="#2F6F73"/>
+    <rect x="-16" y="-6" width="16" height="7" rx="3" fill="#2A2420"/>
+    <rect x="1" y="-6" width="16" height="7" rx="3" fill="#2A2420"/>
+    <rect x="-17" y="-96" width="34" height="54" rx="13" fill="#A3401B"/>
+    <rect x="-17" y="-50" width="34" height="7" fill="#C4935A"/><rect x="6" y="-50" width="9" height="16" rx="2" fill="#D9A86C"/>
+    <rect x="-25" y="-88" width="10" height="34" rx="5" fill="#A3401B"/>
+    <path d="M13 -86l14 -32" stroke="#A3401B" stroke-width="10" stroke-linecap="round"/><circle cx="28" cy="-122" r="5" fill="#B97B52"/>
+    <circle cx="0" cy="-112" r="14" fill="#B97B52"/>
+    <path d="M-15-113a15 15 0 0 1 30 0z" fill="#F2B632"/><rect x="0" y="-117" width="22" height="5" rx="2" fill="#F2B632"/>
+  </g>
+
+  <!-- kitchen: a tap and a washer -->
+  <rect x="654" y="250" width="170" height="16" rx="3" fill="#C4935A"/>
+  <rect x="654" y="266" width="170" height="104" fill="#D9A86C"/>
+  <rect x="664" y="276" width="70" height="86" rx="3" fill="#EBCB9C"/>
+  <rect x="744" y="276" width="70" height="86" rx="3" fill="#EBCB9C"/>
+  <path d="M720 250v-28h22a6 6 0 0 1 6 6v8" stroke="#B8C1CB" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M748 244c-2 4-4 6-4 8a4 4 0 0 0 8 0c0-2-2-4-4-8z" fill="#7FB2CF"/>
+  <rect x="660" y="160" width="150" height="56" rx="4" fill="#EEF2F3"/>
+  <rect x="688" y="160" width="2" height="56" fill="#D3DCDF"/><rect x="714" y="160" width="2" height="56" fill="#D3DCDF"/><rect x="740" y="160" width="2" height="56" fill="#D3DCDF"/><rect x="766" y="160" width="2" height="56" fill="#D3DCDF"/><rect x="792" y="160" width="2" height="56" fill="#D3DCDF"/>
+  <rect x="660" y="187" width="150" height="2" fill="#D3DCDF"/>
+
+  <!-- bathroom: a shower being resealed -->
+  <rect x="884" y="150" width="196" height="186" fill="#EEF2F3"/>
+  <rect x="912" y="150" width="2" height="186" fill="#D3DCDF"/><rect x="940" y="150" width="2" height="186" fill="#D3DCDF"/><rect x="968" y="150" width="2" height="186" fill="#D3DCDF"/><rect x="996" y="150" width="2" height="186" fill="#D3DCDF"/><rect x="1024" y="150" width="2" height="186" fill="#D3DCDF"/><rect x="1052" y="150" width="2" height="186" fill="#D3DCDF"/>
+  <rect x="884" y="181" width="196" height="2" fill="#D3DCDF"/><rect x="884" y="212" width="196" height="2" fill="#D3DCDF"/><rect x="884" y="243" width="196" height="2" fill="#D3DCDF"/><rect x="884" y="274" width="196" height="2" fill="#D3DCDF"/><rect x="884" y="305" width="196" height="2" fill="#D3DCDF"/>
+  <rect x="878" y="336" width="208" height="34" rx="4" fill="#FFFFFF"/>
+  <path d="M886 337h90" stroke="#3B3B33" stroke-width="5" stroke-dasharray="3 3" stroke-linecap="round"/>
+  <path d="M978 337h96" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1040 170v40" stroke="#B8C1CB" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="1040" cy="214" rx="16" ry="6" fill="#B8C1CB"/>
+  <g transform="translate(1000 330) rotate(-12)">
+    <path d="M0 0l10-3v6z" fill="#FBF8F1"/>
+    <rect x="10" y="-7" width="44" height="14" rx="4" fill="#FFFFFF" stroke="#E4D9CB" stroke-width="1.5"/>
+    <rect x="52" y="-9" width="8" height="18" rx="2" fill="#A3401B"/>
+    <rect x="60" y="-2" width="22" height="4" fill="#5B6675"/>
+  </g>
+  <rect x="720" y="128" width="3" height="26" fill="#2A2420"/>
+  <path d="M706 168a16 16 0 0 1 32 0z" fill="#F2B632"/>
+  <rect x="984" y="128" width="40" height="8" rx="3" fill="#DDE3E8"/>
+
+  
+  <g transform="translate(690 384)">
+    <ellipse cx="0" cy="2" rx="26" ry="4" fill="#EAD5C6"/>
+    <rect x="-12" y="-46" width="10" height="44" rx="4" fill="#4A413A"/>
+    <rect x="2" y="-46" width="10" height="44" rx="4" fill="#4A413A"/>
+    <rect x="-16" y="-6" width="16" height="7" rx="3" fill="#2A2420"/>
+    <rect x="1" y="-6" width="16" height="7" rx="3" fill="#2A2420"/>
+    <rect x="-17" y="-96" width="34" height="54" rx="13" fill="#2F6F73"/>
+    
+    <rect x="-25" y="-88" width="10" height="34" rx="5" fill="#2F6F73"/>
+    <path d="M13 -86l14 -32" stroke="#2F6F73" stroke-width="10" stroke-linecap="round"/><circle cx="28" cy="-122" r="5" fill="#F3CDB3"/>
+    <circle cx="0" cy="-112" r="14" fill="#F3CDB3"/>
+    <path d="M-14-113a14 14 0 0 1 28 0c-5-6-22-7-28 0z" fill="#2A2420"/>
+  </g>
+
+  <!-- ground -->
+  <ellipse cx="600" cy="404" rx="590" ry="44" fill="#F1E5DA"/>
+  <path d="M40 386h1120" stroke="#E6D6C7" stroke-width="4" stroke-linecap="round"/>
+  
+  <g transform="translate(212 404) scale(1.1)">
+    <path d="M-14-30v-8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v8" stroke="#3E4652" stroke-width="4" fill="none"/>
+    <rect x="-34" y="-32" width="68" height="32" rx="4" fill="#A3401B"/>
+    <rect x="-34" y="-32" width="68" height="9" rx="3" fill="#742C11"/>
+    <rect x="-5" y="-26" width="10" height="7" rx="1.5" fill="#F2B632"/>
+  </g>
+  
+  <g transform="translate(800 412) scale(0.9)">
+    <rect x="-6" y="-26" width="16" height="8" rx="2" fill="#5B6675"/>
+    <rect x="-22" y="-24" width="16" height="4" fill="#B8C1CB"/>
+    <rect x="8" y="-32" width="42" height="20" rx="8" fill="#F2B632"/>
+    <rect x="22" y="-14" width="14" height="30" rx="4" fill="#2A2420"/>
+    <rect x="16" y="14" width="28" height="12" rx="3" fill="#D99A1E"/>
+    <circle cx="40" cy="-22" r="3" fill="#2A2420"/>
+  </g>
+</svg>

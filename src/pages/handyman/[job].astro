@@ -1,0 +1,264 @@
+---
+/**
+ * /handyman/{job}/
+ *
+ * One page per kind of job, generated from jobs.json. There are deliberately
+ * no job x town or job x property-type pages below these: see README. HDB,
+ * condo, landed and office are sections of each page instead.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import FaqList from '../../components/FaqList.astro';
+import FixOrRenovation from '../../components/FixOrRenovation.astro';
+import QuoteSection from '../../components/QuoteSection.astro';
+import Icon from '../../components/Icon.astro';
+
+import { jobs, company } from '../../lib/data';
+import { urls } from '../../lib/urls';
+import { meta } from '../../lib/seo';
+import { jobServiceNode } from '../../lib/schema';
+import type { Job } from '../../types';
+
+export const getStaticPaths = (() =>
+  jobs.map((job) => ({ params: { job: job.slug }, props: { job } }))) satisfies GetStaticPaths;
+
+interface Props {
+  job: Job;
+}
+
+const { job } = Astro.props;
+const path = urls.job(job.slug);
+const { title, description } = meta(job.metaTitle, job.metaDescription);
+const others = jobs.filter((j) => j.slug !== job.slug);
+const lower = job.serviceName.toLowerCase();
+
+const premises = [
+  { icon: 'hdb', label: 'HDB flats', body: job.premises.hdb },
+  { icon: 'condo', label: 'Condos', body: job.premises.condo },
+  { icon: 'landed', label: 'Landed homes', body: job.premises.landed },
+  { icon: 'office', label: 'Offices', body: job.premises.office },
+] as const;
+
+const sections = [
+  ['#covered', 'What’s covered'],
+  ['#scope', 'Small fix or bigger job'],
+  ['#price', 'Price'],
+  ['#prepare', 'Preparing'],
+  ['#premises', 'Homes and offices'],
+  ['#faq', 'Questions'],
+] as const;
+
+// The disposal line names Junk to Clear once; that name becomes the link.
+const [disposalBefore, disposalAfter] = job.disposal ? job.disposal.split('Junk to Clear') : ['', ''];
+
+const tick = 'M13.5 4.5 6.5 12 2.5 8.2';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  crumbs={[
+    { name: 'Handyman jobs', path: urls.handyman() },
+    { name: job.serviceName, path },
+  ]}
+  schemaNodes={[jobServiceNode(job, path)]}
+  ctaHref="#quote"
+>
+  <section class="border-b border-line bg-surface">
+    <div class="wrap grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div>
+        <p class="flex items-center gap-3 text-sm font-semibold uppercase tracking-wide text-brand">
+          <img src={`/icons/${job.slug}.svg`} alt="" width="64" height="64" decoding="async" class="size-9" />
+          Handyman jobs
+        </p>
+        <h1 class="mt-3 text-3xl font-semibold sm:text-4xl lg:text-5xl">{job.h1}</h1>
+        {job.intro.map((p, i) => (
+          <p class={i === 0 ? 'mt-5 text-lg leading-relaxed text-ink-muted' : 'mt-4 leading-relaxed text-ink-muted'}>{p}</p>
+        ))}
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#quote" class="rounded-lg bg-brand px-6 py-3.5 font-semibold text-white no-underline hover:bg-brand-dark">
+            Ask for a quote
+          </a>
+          <a href="#covered" class="rounded-lg bg-surface px-6 py-3.5 font-semibold text-brand no-underline ring-1 ring-line-strong hover:bg-brand-light">
+            What’s covered
+          </a>
+        </div>
+        <nav aria-label="On this page" class="mt-8">
+          <ul class="flex flex-wrap gap-2 text-sm">
+            {sections.map(([href, label]) => (
+              <li><a href={href} class="inline-block rounded-full bg-canvas px-3.5 py-1.5 text-ink-muted no-underline ring-1 ring-line hover:text-brand hover:ring-brand/40">{label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="order-first rounded-card border border-line bg-canvas p-4 lg:order-none">
+        <img
+          src={`/illo/${job.slug}.svg`}
+          alt={job.illoAlt}
+          width="320"
+          height="220"
+          fetchpriority="high"
+          decoding="async"
+          class="mx-auto h-40 w-auto sm:h-auto sm:w-full sm:max-w-sm"
+        />
+      </div>
+    </div>
+  </section>
+
+  <Section id="covered">
+    <div class="max-w-3xl">
+      <h2 class="text-2xl font-semibold sm:text-3xl">What {lower} covers</h2>
+      <p class="mt-4 text-ink-muted">
+        The usual jobs under this heading. Tick it in the enquiry and describe yours; if it
+        isn’t here, describe it anyway.
+      </p>
+    </div>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {job.tasks.map((t) => (
+        <div class="rounded-card border border-line bg-surface p-6">
+          <h3 class="flex items-center gap-2.5 font-semibold">
+            <svg class="shrink-0 text-brand" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={tick} /></svg>
+            {t.name}
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-muted">{t.body}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-8 max-w-3xl rounded-card border border-sand-deep/40 bg-sand/40 p-5 text-sm leading-relaxed text-ink">{job.tasksNote}</p>
+    {job.disposal && (
+      <p class="mt-4 flex max-w-3xl gap-3 text-ink-muted">
+        <Icon name="bin" size={22} class="mt-0.5 shrink-0 text-brand" />
+        <span>
+          {disposalBefore}<a href={company.links.junkToClearHousehold} class="text-brand underline underline-offset-2">Junk to Clear</a>{disposalAfter}
+        </span>
+      </p>
+    )}
+  </Section>
+
+  <Section id="scope" tone="sunk">
+    <FixOrRenovation
+      heading={`${job.serviceName}: a small fix or a bigger job?`}
+      small={job.scope.small}
+      bigger={job.scope.bigger}
+      note={job.scope.note}
+    />
+  </Section>
+
+  <Section id="price">
+    <div class="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
+      <div>
+        <h2 class="flex items-center gap-3 text-2xl font-semibold sm:text-3xl"><Icon name="tag" size={28} class="text-brand" />What affects the price</h2>
+        <p class="mt-4 text-ink-muted">
+          We don’t publish prices. The partner handyman quotes once it knows the job. These
+          are the things it will ask about.
+        </p>
+        <ul class="mt-6 space-y-3">
+          {job.priceFactors.map((f) => (
+            <li class="flex gap-3 leading-relaxed text-ink-muted">
+              <span class="mt-2.5 size-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true"></span>
+              <span>{f}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="rounded-card border border-brand/25 bg-brand-light/60 p-6">
+        <img src="/illo/photos.svg" alt="A phone taking a photo of a dripping tap" width="320" height="220" loading="lazy" decoding="async" class="mx-auto h-32 w-auto" />
+        <h3 class="mt-4 flex items-center gap-2.5 font-semibold"><Icon name="camera" size={22} class="text-brand" />Photos that help the quote</h3>
+        <ul class="mt-3 space-y-2">
+          {job.photos.map((p) => (
+            <li class="flex gap-3 text-sm leading-relaxed text-ink-muted">
+              <svg class="mt-1 shrink-0 text-brand" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={tick} /></svg>
+              <span>{p}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-3 text-xs leading-relaxed text-ink-muted">Keep them on your phone: the handyman may ask for them when it contacts you.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="prepare" tone="sunk">
+    <h2 class="text-2xl font-semibold sm:text-3xl">How to prepare, and what happens on the day</h2>
+    <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h3 class="flex items-center gap-2.5 font-semibold"><Icon name="clipboard" size={22} class="text-brand" />Before the visit</h3>
+        <ul class="mt-4 space-y-3">
+          {job.prepare.map((s) => (
+            <li class="flex gap-3 text-sm leading-relaxed text-ink-muted">
+              <svg class="mt-1 shrink-0 text-brand" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={tick} /></svg>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="rounded-card border border-line bg-surface p-6">
+        <h3 class="flex items-center gap-2.5 font-semibold"><Icon name="calendar" size={22} class="text-brand" />On the day</h3>
+        <ol class="mt-4 space-y-3">
+          {job.onTheDay.map((s, i) => (
+            <li class="flex gap-3 text-sm leading-relaxed text-ink-muted">
+              <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-brand-light text-xs font-semibold text-brand">{i + 1}</span>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+    <div class="mt-8 max-w-3xl">
+      <h3 class="flex items-center gap-2.5 font-semibold"><Icon name="wrench" size={22} class="text-brand" />Afterwards</h3>
+      <p class="mt-2 leading-relaxed text-ink-muted">{job.afterwards}</p>
+    </div>
+  </Section>
+
+  <Section id="premises">
+    <div class="max-w-3xl">
+      <h2 class="text-2xl font-semibold sm:text-3xl">{job.serviceName} in homes and offices</h2>
+      <p class="mt-4 text-ink-muted">
+        The same job differs between a flat, a landed house and an office. Here’s what
+        changes.
+      </p>
+    </div>
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      {premises.map((p) => (
+        <div class="rounded-card border border-line bg-surface p-6">
+          <div class="flex items-center gap-3">
+            <span class="flex size-11 items-center justify-center rounded-lg bg-sand/70 text-brand-dark"><Icon name={p.icon} /></span>
+            <h3 class="font-semibold">{p.label}</h3>
+          </div>
+          <p class="mt-2 text-sm leading-relaxed text-ink-muted">{p.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <Section id="faq" tone="sunk" narrow>
+    <h2 class="text-2xl font-semibold sm:text-3xl">Questions about {lower}</h2>
+    <div class="mt-8">
+      <FaqList faqs={job.faqs} />
+    </div>
+  </Section>
+
+  <QuoteSection pageName={job.serviceName} job={job.slug} heading={`Ask for a ${lower} quote`} />
+
+  <Section>
+    <h2 class="text-xl font-semibold">Other handyman jobs</h2>
+    <ul class="mt-5 flex flex-wrap gap-3">
+      {others.map((o) => (
+        <li>
+          <a href={urls.job(o.slug)} class="inline-flex items-center gap-2 rounded-lg bg-surface py-1.5 pl-1.5 pr-4 text-sm font-medium text-brand no-underline ring-1 ring-line-strong hover:bg-brand-light">
+            <img src={`/icons/${o.slug}.svg`} alt="" width="64" height="64" loading="lazy" decoding="async" class="size-7" />
+            {o.serviceName}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a href={urls.handyman()} class="inline-flex items-center gap-2 rounded-lg bg-surface py-1.5 pl-1.5 pr-4 text-sm font-medium text-brand no-underline ring-1 ring-line-strong hover:bg-brand-light">
+          <img src="/icons/handyman.svg" alt="" width="64" height="64" loading="lazy" decoding="async" class="size-7" />
+          All handyman jobs
+        </a>
+      </li>
+    </ul>
+  </Section>
+</BaseLayout>

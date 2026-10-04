@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import JobCards from '../components/JobCards.astro';
+import StepsStrip from '../components/StepsStrip.astro';
+import FixOrRenovation from '../components/FixOrRenovation.astro';
+import QuoteSection from '../components/QuoteSection.astro';
+import Icon from '../components/Icon.astro';
+
+import { company } from '../lib/data';
+import { urls } from '../lib/urls';
+import { meta } from '../lib/seo';
+
+const { title, description } = meta(
+  'BrokenToFixed | Handyman Services in Singapore',
+  'Handyman services in Singapore: furniture assembly, TV mounting, doors and locks, sealant, small plumbing and electrical jobs. One enquiry, one quote.',
+);
+
+const premises = [
+  { icon: 'hdb', name: 'HDB flats', body: 'Concrete walls, compact rooms, and the jobs that come with a new flat or an old one.' },
+  { icon: 'condo', name: 'Condos', body: 'Partition walls, stone tops, and the management office’s rules on hours and lifts.' },
+  { icon: 'landed', name: 'Landed homes', body: 'More rooms, more doors and more fittings, inside and out.' },
+  { icon: 'office', name: 'Offices', body: 'Desks, screens, pantries and doors, with work done out of hours.' },
+] as const;
+---
+
+<BaseLayout title={title} description={description} path={urls.home()} ctaHref="#quote">
+  <section class="border-b border-line bg-surface">
+    <div class="wrap pt-14 pb-8 sm:pt-20">
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand">Handyman services in Singapore</p>
+      <h1 class="mt-3 max-w-3xl text-4xl font-semibold sm:text-5xl">Something broken, loose or still in its box? Tell us once, and a partner handyman takes it from there.</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted">
+        Furniture to put together, a TV to mount, a door that sticks, a tap that drips, a
+        light that flickers. Send one enquiry, for one job or a list of them, and we’ll pass
+        it to a partner handyman who quotes and does the work.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#quote" class="rounded-lg bg-brand px-6 py-3.5 font-semibold text-white no-underline hover:bg-brand-dark">Ask for a quote</a>
+        <a href="#jobs" class="rounded-lg bg-surface px-6 py-3.5 font-semibold text-brand no-underline ring-1 ring-line-strong hover:bg-brand-light">See the jobs</a>
+      </div>
+      <p class="mt-6 text-sm text-ink-faint">Run by the team behind {company.parentBrand}.</p>
+    </div>
+    <div class="wrap">
+      <img
+        src="/illo/hero.svg"
+        alt="A home in cutaway with a fix under way in every room: a wardrobe being built in the bedroom, a handyman on a stepladder putting up a ceiling fan beside a wall-mounted TV, a resident pointing at a dripping kitchen tap, and a shower being resealed"
+        width="1200"
+        height="460"
+        fetchpriority="high"
+        decoding="async"
+        class="mx-auto h-auto w-full max-w-5xl max-sm:h-56 max-sm:object-cover max-sm:object-[42%_100%]"
+      />
+    </div>
+  </section>
+
+  <Section id="jobs">
+    <div class="max-w-3xl">
+      <h2 class="text-2xl font-semibold sm:text-3xl">What needs fixing?</h2>
+      <p class="mt-4 text-ink-muted">
+        Each page covers what the job includes, where a handyman job ends and a bigger one
+        begins, what affects the price, and how to get ready for the visit.
+      </p>
+    </div>
+    <div class="mt-8">
+      <JobCards />
+    </div>
+    <p class="mt-6 text-ink-muted">
+      Several small jobs, or one that isn’t listed? See
+      <a href={urls.handyman()} class="text-brand underline underline-offset-2">all handyman jobs</a>.
+    </p>
+  </Section>
+
+  <Section tone="sunk">
+    <h2 class="text-2xl font-semibold sm:text-3xl">How it works</h2>
+    <div class="mt-8">
+      <StepsStrip />
+    </div>
+    <p class="mt-8 max-w-3xl text-ink-muted">
+      {company.tradingName} doesn’t do the work itself: independent partner handymen do.
+      <a href={urls.howItWorks()} class="text-brand underline underline-offset-2">More on how it works</a>.
+    </p>
+  </Section>
+
+  <Section>
+    <FixOrRenovation />
+  </Section>
+
+  <Section tone="sunk">
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-semibold sm:text-3xl">For homes and offices</h2>
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+          {premises.map((p) => (
+            <li class="rounded-card border border-line bg-surface p-5">
+              <span class="flex size-11 items-center justify-center rounded-lg bg-sand/70 text-brand-dark"><Icon name={p.icon} /></span>
+              <h3 class="mt-3 font-semibold">{p.name}</h3>
+              <p class="mt-1 text-sm leading-relaxed text-ink-muted">{p.body}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 class="flex items-center gap-3 text-2xl font-semibold sm:text-3xl"><Icon name="tag" size={28} class="text-brand" />About prices</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          We don’t publish prices. A handyman job depends on what’s involved, the parts, the
+          wall or fitting, and how many jobs are done in one visit, so the partner gives you a
+          quote once it knows the job.
+        </p>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Putting several small jobs into one enquiry usually makes sense: one visit for the
+          wobbly shelf, the dripping tap and the door that won’t latch.
+        </p>
+        <img
+          src="/illo/photos.svg"
+          alt="A phone taking a photo of a dripping tap"
+          width="320"
+          height="220"
+          loading="lazy"
+          decoding="async"
+          class="mt-6 h-auto w-full max-w-xs"
+        />
+        <p class="mt-2 text-sm leading-relaxed text-ink-muted">
+          Photos of the job help the handyman quote, and may save a visit just to look.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <QuoteSection pageName="Home" />
+</BaseLayout>

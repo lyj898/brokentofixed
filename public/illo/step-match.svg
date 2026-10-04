@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" width="240" height="170">
+<path transform="scale(0.750 0.773)" d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="120" cy="150" rx="84" ry="5" fill="#EAD5C6"/>
+  <rect x="26" y="100" width="70" height="8" rx="2" fill="#C4935A"/>
+  <rect x="32" y="108" width="6" height="40" fill="#C4935A"/><rect x="84" y="108" width="6" height="40" fill="#C4935A"/>
+  <rect x="38" y="70" width="46" height="30" rx="3" fill="#3E4652"/>
+  <rect x="42" y="74" width="38" height="22" rx="2" fill="#D6E5EC"/>
+  <rect x="46" y="79" width="20" height="3" rx="1" fill="#A3401B"/><rect x="46" y="85" width="28" height="3" rx="1" fill="#C9D0D8"/>
+  <path d="M96 70c30-40 70-40 96 0" stroke="#D9774E" stroke-width="3" stroke-dasharray="6 6" fill="none" stroke-linecap="round"/>
+  <rect x="124" y="36" width="34" height="24" rx="3" fill="#FFFFFF" stroke="#E4D9CB" stroke-width="2"/>
+  <path d="M124 38l17 12 17-12" stroke="#A3401B" stroke-width="2.5" fill="none"/>
+  
+  <g transform="translate(190 148) scale(0.95)">
+    <path d="M-14-30v-8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v8" stroke="#3E4652" stroke-width="4" fill="none"/>
+    <rect x="-34" y="-32" width="68" height="32" rx="4" fill="#A3401B"/>
+    <rect x="-34" y="-32" width="68" height="9" rx="3" fill="#742C11"/>
+    <rect x="-5" y="-26" width="10" height="7" rx="1.5" fill="#F2B632"/>
+  </g>
+</svg>

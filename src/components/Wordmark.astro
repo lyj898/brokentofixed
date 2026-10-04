@@ -1,0 +1,9 @@
+---
+/** The BrokenToFixed wordmark, as text. */
+interface Props {
+  class?: string;
+}
+const { class: className = 'text-lg' } = Astro.props;
+---
+
+<span class={`font-bold tracking-tight text-ink ${className}`}>Broken<span class="text-brand">To</span>Fixed</span>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+<path d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="164" cy="184" rx="122" ry="7" fill="#EAD5C6"/>
+  <rect x="70" y="40" width="150" height="142" fill="#F7EFE6"/>
+  <path d="M70 40h150v58l-22 10-18-14-26 18-20-12-30 16-34-8z" fill="#F7EFE6"/>
+  <g fill="#C9764B"><rect x="78" y="108" width="24" height="10" rx="1"/><rect x="106" y="108" width="24" height="10" rx="1"/><rect x="134" y="108" width="24" height="10" rx="1"/><rect x="162" y="108" width="24" height="10" rx="1"/><rect x="190" y="108" width="24" height="10" rx="1"/><rect x="92" y="122" width="24" height="10" rx="1"/><rect x="120" y="122" width="24" height="10" rx="1"/><rect x="148" y="122" width="24" height="10" rx="1"/><rect x="176" y="122" width="24" height="10" rx="1"/><rect x="204" y="122" width="24" height="10" rx="1"/><rect x="78" y="136" width="24" height="10" rx="1"/><rect x="106" y="136" width="24" height="10" rx="1"/><rect x="134" y="136" width="24" height="10" rx="1"/><rect x="162" y="136" width="24" height="10" rx="1"/><rect x="190" y="136" width="24" height="10" rx="1"/><rect x="92" y="150" width="24" height="10" rx="1"/><rect x="120" y="150" width="24" height="10" rx="1"/><rect x="148" y="150" width="24" height="10" rx="1"/><rect x="176" y="150" width="24" height="10" rx="1"/><rect x="204" y="150" width="24" height="10" rx="1"/><rect x="78" y="164" width="24" height="10" rx="1"/><rect x="106" y="164" width="24" height="10" rx="1"/><rect x="134" y="164" width="24" height="10" rx="1"/><rect x="162" y="164" width="24" height="10" rx="1"/><rect x="190" y="164" width="24" height="10" rx="1"/></g>
+  <path d="M70 98l34 8 30-16 20 12 26-18 18 14 22-10" stroke="#E4D9CB" stroke-width="3" fill="none"/>
+  <rect x="226" y="136" width="66" height="46" rx="3" fill="#F2B632"/>
+  <path d="M220 136h78" stroke="#D99A1E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M232 136l8-14 10 6 8-12 10 10 12-4 6 14z" fill="#C9D0D8"/>
+  <path d="M246 126l4-8 6 4z" fill="#C9764B"/>
+  <rect x="44" y="150" width="40" height="32" rx="4" fill="#FBF8F1" stroke="#E4D9CB" stroke-width="2"/>
+  <rect x="50" y="160" width="28" height="4" rx="2" fill="#C9D0D8"/>
+  <g transform="rotate(-10 136 176)"><rect x="104" y="170" width="70" height="10" rx="2" fill="#EEF2F3" stroke="#D3DCDF" stroke-width="1.5"/></g>
+</svg>

@@ -1,0 +1,190 @@
+---
+/**
+ * /handyman/
+ *
+ * The hub for the job pages, and the page for "handyman singapore": a list of
+ * small jobs in one visit, or a job that isn't listed. Handover repairs are a
+ * section here, not a page: OurKampung owns the end-of-tenancy checklist, so
+ * this links it rather than writing it again.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import JobCards from '../../components/JobCards.astro';
+import FixOrRenovation from '../../components/FixOrRenovation.astro';
+import FaqList from '../../components/FaqList.astro';
+import QuoteSection from '../../components/QuoteSection.astro';
+
+import { company, jobs } from '../../lib/data';
+import { urls } from '../../lib/urls';
+import { meta } from '../../lib/seo';
+import { serviceNode } from '../../lib/schema';
+
+const path = urls.handyman();
+const { title, description } = meta(
+  'Handyman Singapore | Small Repairs for Homes & Offices',
+  'Handyman services in Singapore for HDB flats, condos, landed homes and offices. List the jobs once, and a partner handyman quotes for one visit.',
+);
+
+const summary =
+  'Handyman jobs and small repairs for homes and offices in Singapore, arranged through a partner handyman who quotes and does the work.';
+
+const priceFactors = [
+  'What each job involves, and how many jobs there are.',
+  'Parts and fittings, and whether you supply them or the handyman does.',
+  'The walls, floors and fittings the handyman has to work with.',
+  'Access: high ceilings, tight spaces, or a building that limits working hours.',
+  'How soon you need it, and whether it has to be out of hours.',
+];
+
+const faqs = [
+  {
+    q: 'Can one handyman do several different jobs in one visit?',
+    a: 'Often, yes. List them all in one enquiry, with a line on each. The partner will say whether it can do them together, or whether one of them needs a separate visit.',
+  },
+  {
+    q: 'What if my job isn’t listed?',
+    a: 'Tick “Something else” and describe it. We’ll check whether a partner takes on that kind of job and tell you either way.',
+  },
+  {
+    q: 'Do I need to buy the parts?',
+    a: 'Either works. If you’ve already bought a tap, a lock or a light, say so. If not, the handyman can usually bring parts and include them in the quote.',
+  },
+  {
+    q: 'Do you do renovation?',
+    a: `Not on this site. Hacking, tiling, carpentry and full repainting are renovation work, and ${company.parentBrand}, run by the same team, takes those enquiries.`,
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  crumbs={[{ name: 'Handyman jobs', path }]}
+  schemaNodes={[serviceNode('Handyman services', summary, path)]}
+  ctaHref="#quote"
+>
+  <section class="border-b border-line bg-surface">
+    <div class="wrap grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div>
+        <h1 class="max-w-3xl text-3xl font-semibold sm:text-4xl lg:text-5xl">Handyman services in Singapore</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          For HDB flats, condos, landed homes and offices. Tell us what needs doing, one job or
+          a list, and we’ll pass it to a partner handyman, who quotes and does the work.
+        </p>
+        <p class="mt-4 max-w-2xl leading-relaxed text-ink-muted">
+          Know the job? Go straight to its page for what’s included, what affects the price
+          and how to get ready. Got a few small things? Put them in one enquiry.
+        </p>
+        <div class="mt-8">
+          <a href="#quote" class="rounded-lg bg-brand px-6 py-3.5 font-semibold text-white no-underline hover:bg-brand-dark">Ask for a quote</a>
+        </div>
+      </div>
+      <div class="rounded-card border border-line bg-canvas p-6">
+        <p class="text-sm font-semibold text-ink">Jobs a partner handyman takes on</p>
+        <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3">
+          {jobs.map((j) => (
+            <li>
+              <a href={urls.job(j.slug)} class="flex items-center gap-3 text-sm text-ink-muted no-underline hover:text-brand">
+                <img src={`/icons/${j.slug}.svg`} alt="" width="64" height="64" decoding="async" class="size-9 shrink-0" />
+                {j.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <Section>
+    <h2 class="text-2xl font-semibold sm:text-3xl">Jobs, one by one</h2>
+    <div class="mt-8">
+      <JobCards />
+    </div>
+  </Section>
+
+  <Section tone="sunk">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <img
+        src="/illo/hero.svg"
+        alt="A home in cutaway with a different small job in each room: a wardrobe, a ceiling fan, a kitchen tap and a shower"
+        width="1200"
+        height="460"
+        loading="lazy"
+        decoding="async"
+        class="h-auto w-full"
+      />
+      <div>
+        <h2 class="text-2xl font-semibold sm:text-3xl">A list of small jobs, one visit</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Most homes collect small jobs: a shelf to put up, a cabinet door that hangs low, a
+          bathroom bead going black, a light that needs changing. Each one alone hardly seems
+          worth a call. Together they make a sensible visit.
+        </p>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Tick every job that applies in the enquiry and add a line on each. The partner can
+          then plan the visit, bring the right parts, and quote for the lot.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Section>
+    <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+      <div>
+        <h2 class="text-2xl font-semibold sm:text-3xl">Repairs before handing back a rental</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Tenants moving out often have a list of small repairs before the joint inspection:
+          holes from wall mounts, loose handles, worn sealant, a door that no longer latches.
+          These are handyman jobs, and you can send them as one enquiry.
+        </p>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          For what’s worth fixing and what to leave, OurKampung, a sister guide run by the same
+          team, has a checklist:
+          <a href={company.links.ourKampungHandover} class="text-brand underline underline-offset-2">handyman fixes worth doing before you hand back a rental</a>.
+        </p>
+      </div>
+      <img
+        src="/illo/handover.svg"
+        alt="A checklist with three items ticked and one to go, beside a set of keys"
+        width="320"
+        height="220"
+        loading="lazy"
+        decoding="async"
+        class="mx-auto h-auto w-full max-w-xs"
+      />
+    </div>
+  </Section>
+
+  <Section tone="sunk">
+    <FixOrRenovation />
+  </Section>
+
+  <Section>
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-semibold sm:text-3xl">What affects the price</h2>
+        <p class="mt-4 text-ink-muted">
+          We don’t publish prices. The partner gives you a quote once it knows the job, from
+          your description and photos, or after a look. It depends on:
+        </p>
+        <ul class="mt-6 space-y-3">
+          {priceFactors.map((f) => (
+            <li class="flex gap-3 leading-relaxed text-ink-muted">
+              <span class="mt-2.5 size-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true"></span>
+              <span>{f}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold sm:text-3xl">Questions</h2>
+        <div class="mt-6">
+          <FaqList faqs={faqs} />
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <QuoteSection pageName="Handyman" />
+</BaseLayout>

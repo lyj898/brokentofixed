@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+<path d="M46 126C36 70 94 30 164 30c72 0 124 34 120 96-4 58-64 78-128 78-58 0-100-24-110-78z" fill="#F6E7DD"/>
+  <ellipse cx="164" cy="184" rx="122" ry="7" fill="#EAD5C6"/>
+  <rect x="66" y="74" width="100" height="108" rx="6" fill="#FFFFFF" stroke="#E4D9CB" stroke-width="2"/>
+  <rect x="66" y="74" width="100" height="22" rx="6" fill="#DDE3E8"/>
+  <rect x="76" y="81" width="30" height="8" rx="2" fill="#2F6F73"/>
+  <circle cx="148" cy="85" r="6" fill="#B8C1CB"/>
+  <circle cx="116" cy="140" r="30" fill="#B8C1CB"/>
+  <circle cx="116" cy="140" r="22" fill="#3E4652"/>
+  <path d="M96 148a22 22 0 0 0 40 0z" fill="#7FB2CF" opacity=".7"/>
+  <g transform="translate(86 140) rotate(-58)"><ellipse cx="0" cy="-30" rx="10" ry="30" fill="#DDE3E8" stroke="#B8C1CB" stroke-width="4"/></g>
+  <rect x="186" y="34" width="78" height="148" rx="6" fill="#D6E5EC"/>
+  <rect x="186" y="88" width="78" height="3" fill="#A9C6D6"/>
+  <rect x="194" y="48" width="5" height="30" rx="2.5" fill="#5B6675"/>
+  <rect x="194" y="100" width="5" height="40" rx="2.5" fill="#5B6675"/>
+  <path d="M222 60l6 6M228 60l-6 6M225 58v10M220 63h10" stroke="#2F6F73" stroke-width="1.8" stroke-linecap="round"/>
+  <g transform="translate(272 186)" fill="#5B6675"><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(0)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(45)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(90)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(135)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(180)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(225)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(270)"/><rect x="-3" y="-11" width="6" height="8" rx="1" transform="rotate(315)"/><circle r="7"/><circle r="2.8000000000000003" fill="#F6E7DD"/></g>
+  
+  <g transform="translate(46 192) rotate(0) scale(0.7)">
+    <rect x="0" y="-4" width="56" height="8" rx="4" fill="#5B6675"/>
+    <path d="M-14-10a12 12 0 1 0 0 20l2-6h6v-8h-6z" fill="#5B6675"/>
+    <circle cx="62" cy="0" r="9" fill="#5B6675"/><circle cx="62" cy="0" r="4" fill="#F6E7DD"/>
+  </g>
+</svg>

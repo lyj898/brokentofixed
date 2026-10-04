@@ -1,0 +1,20 @@
+{
+  "entityName": "SKAP Waste Management Pte Ltd",
+  "tradingName": "BrokenToFixed",
+  "parentBrand": "Junk to Clear",
+  "parentBrandUrl": "https://junktoclear.com.sg",
+  "yearEstablished": 2009,
+  "siteUrl": "https://brokentofixed.com",
+  "operatingHoursDisplay": "Mon-Fri 9am-6pm, Sat 9am-1pm. Closed Sunday and public holidays.",
+  "businessModelStatement": "BrokenToFixed is a handyman matching service run by the team behind Junk to Clear. We pass your enquiry to a partner handyman, who quotes and does the job.",
+  "formSubmit": {
+    "defaultEndpoint": "https://formsubmit.co/lyj898@gmail.com",
+    "subjectPrefix": "BrokenToFixed – ",
+    "note": "The build variable PUBLIC_FORM_ENDPOINT overrides defaultEndpoint; set it to FormSubmit's alias once the user confirms it. The form posts to the /ajax/ form of whichever is used. FormSubmit may ask for a fresh activation the first time a new site posts to it, so send one test enquiry from the live domain (with the user's OK) and click the confirmation link. The address appears only here and in the compiled form script; the audit fails if it shows anywhere else."
+  },
+  "links": {
+    "junkToClearHousehold": "https://junktoclear.com.sg/services/residential-waste-disposal-singapore/",
+    "junkToClearRenovation": "https://junktoclear.com.sg/services/renovation-services-singapore/",
+    "ourKampungHandover": "https://ourkampung.com/ending-a-tenancy/handyman-fixes-before-handover/"
+  }
+}
