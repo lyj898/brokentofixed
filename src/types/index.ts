@@ -59,5 +59,11 @@ export interface Company {
   operatingHoursDisplay: string;
   businessModelStatement: string;
   formSubmit: { defaultEndpoint: string; subjectPrefix: string; note: string };
-  links: { junkToClearHousehold: string; junkToClearRenovation: string; ourKampungHandover: string };
+  links: {
+    junkToClearHousehold: string;
+    junkToClearRenovation: string;
+    ourKampung: string;
+    ourKampungSites: string;
+    ourKampungHandover: string;
+  };
 }

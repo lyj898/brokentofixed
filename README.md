@@ -76,8 +76,10 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
   WhatsApp. Subject is `BrokenToFixed – <page>`. The PDPA line says the details go to the team behind Junk
   to Clear, which passes them to the partner handyman who'll quote. If sending fails it says so and keeps
   what was typed; no contact details are offered. The inbox address appears only in the endpoint.
-- **Family links.** None in the header or footer, including OurKampung until the family revamp. The About
-  page links Junk to Clear. Never `rel="noreferrer"`.
+- **Family links.** None in the header, and in the footer only "Part of OurKampung" (the family revamp,
+  `../jtc-family/briefs/family-revamp.md`, 5 Oct 2026): OurKampung's home page, `rel="nofollow"`. The About
+  page links Junk to Clear and OurKampung's /our-sites/. Sister sites link each other only in the text, at the
+  step that needs it. Never `rel="noreferrer"`.
 
 ## Before launch
 

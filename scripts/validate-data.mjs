@@ -90,7 +90,7 @@ if (company.formSubmit?.subjectPrefix !== 'BrokenToFixed – ') {
 }
 if (company.siteUrl !== 'https://brokentofixed.com') err('company.json: siteUrl must be https://brokentofixed.com');
 for (const [k, v] of Object.entries(company.links ?? {})) {
-  if (!/^https:\/\/[a-z.]+\/.+\/$/.test(v)) err(`company.json: links.${k} must be a specific page with a trailing slash`);
+  if (!/^https:\/\/[a-z.]+\/(.+\/)?$/.test(v)) err(`company.json: links.${k} must be a specific page with a trailing slash`);
 }
 
 for (const e of errors) console.error(`  ERROR ${e}`);

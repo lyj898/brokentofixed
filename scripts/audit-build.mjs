@@ -234,7 +234,12 @@ for (const p of pages.values()) {
     (p.html.match(/<header[\s\S]*?<\/header>/) ?? [''])[0],
     (p.html.match(/<footer[\s\S]*?<\/footer>/) ?? [''])[0],
   ].join('');
-  if (FAMILY.test(chrome)) err(`${p.route}: family-site link in the header or footer (no sitewide links)`);
+  // The one allowed exception (family revamp, 5 Oct 2026): "Part of OurKampung"
+  // in the footer, to the home page, rel="nofollow".
+  const allowed = /<a href="https:\/\/ourkampung\.com\/" rel="nofollow"[^>]*>OurKampung<\/a>/g;
+  const footerParts = (p.html.match(/<footer[\s\S]*?<\/footer>/) ?? [''])[0].match(allowed) ?? [];
+  if (footerParts.length !== 1) err(`${p.route}: footer lacks the one "Part of OurKampung" nofollow link`);
+  if (FAMILY.test(chrome.replace(allowed, ''))) err(`${p.route}: family-site link in the header or footer (no sitewide links)`);
   for (const [tag] of p.html.matchAll(/<a\b[^>]*>/g)) {
     if (FAMILY.test(tag) && /noreferrer/.test(tag)) err(`${p.route}: rel="noreferrer" on a family link hides the referral`);
   }
