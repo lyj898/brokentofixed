@@ -70,7 +70,8 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
 - **One GA4 event:** `generate_lead`, after FormSubmit confirms delivery. The site's code sends no
   `form_submit`, `button_click` or `form_start`. GA4's enhanced measurement (left on) sends `form_start` and
   `form_submit` by itself; those are never key events. `generate_lead` is the only key event, created with
-  code in GA4 before it first fires (PORTFOLIO.md).
+  code in GA4 before it first fires (PORTFOLIO.md). GA4 property "BrokenToFixed" 557370171 in the Junktoclear
+  account, stream 16043199055, measurement ID G-SBWGCBW1TY (the `PUBLIC_GA4_ID` repo variable, set 5 Oct 2026).
 - **Form.** Fields: the jobs (checkboxes), a description, property type, area, timing, name, and phone or
   WhatsApp. Subject is `BrokenToFixed – <page>`. The PDPA line says the details go to the team behind Junk
   to Clear, which passes them to the partner handyman who'll quote. If sending fails it says so and keeps
