@@ -274,6 +274,9 @@ for (const p of pages.values()) {
     const allowed = p.html.split(endpoint).length - 1;
     if (hits > allowed) err(`${p.route}: destination inbox appears outside the FormSubmit endpoint`);
   }
+  // The form posts to FormSubmit's alias, so no email address belongs anywhere in a page.
+  const email = p.html.match(/[a-z0-9._%+-]+@[a-z0-9-]+\.[a-z0-9.-]*[a-z]{2,}/i);
+  if (email) err(`${p.route}: email address in the page ("${email[0]}")`);
   if (/href="tel:|href="https:\/\/wa\.me\/|href="mailto:/.test(p.html)) err(`${p.route}: phone, WhatsApp or email link (contact is form-only)`);
 
   const placeholders = [...new Set(p.html.match(/\[[A-Z][A-Z_0-9]{2,}\]/g) ?? [])];

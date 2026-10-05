@@ -15,7 +15,7 @@ Two repo variables, both optional (Settings > Secrets and variables > Actions > 
 | Variable | Without it |
 |---|---|
 | `PUBLIC_GA4_ID` | no analytics script loads |
-| `PUBLIC_FORM_ENDPOINT` | the form posts to `formSubmit.defaultEndpoint` in `src/data/company.json` (the raw address) |
+| `PUBLIC_FORM_ENDPOINT` | the form posts to `formSubmit.defaultEndpoint` in `src/data/company.json`. Both are FormSubmit's alias (set 5 Oct 2026), never the raw address |
 
 ```
 npm run dev      # local dev server
@@ -75,7 +75,8 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
 - **Form.** Fields: the jobs (checkboxes), a description, property type, area, timing, name, and phone or
   WhatsApp. Subject is `BrokenToFixed – <page>`. The PDPA line says the details go to the team behind Junk
   to Clear, which passes them to the partner handyman who'll quote. If sending fails it says so and keeps
-  what was typed; no contact details are offered. The inbox address appears only in the endpoint.
+  what was typed; no contact details are offered. The form posts to FormSubmit's alias, so no inbox address
+  appears in the page; the audit fails if one does.
 - **Family links.** None in the header, and in the footer only "Part of OurKampung" (the family revamp,
   `../jtc-family/briefs/family-revamp.md`, 5 Oct 2026): OurKampung's home page, `rel="nofollow"`. The About
   page links Junk to Clear and OurKampung's /our-sites/. Sister sites link each other only in the text, at the
