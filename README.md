@@ -68,7 +68,9 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
   Clear: the fix-or-renovation panel links its renovation page), aircon, pest control, cleaning or moving.
   Where a job leaves junk behind (furniture, appliances), the job page links Junk to Clear's household page.
 - **Junk to Clear** is a separate company we refer disposal, clearance and renovation jobs to, with no fees.
-  Every mention introduces it as "a disposal company we refer jobs to" (renovation: "a renovation and
+  Linked from three pages only (user, 6 Oct 2026): its renovation page from the panel on `/handyman/`, and
+  its household page from the disposal lines on furniture-assembly and appliance-repair. The panel on the
+  home and job pages names it without a link. Every mention introduces it as "a disposal company we refer jobs to" (renovation: "a renovation and
   disposal company we refer jobs to"); never "our", "sister" or "same team". Plain links only: no `rel`.
   The audit checks both. No SKAP, no "team behind Junk to Clear", no 2009. Handover
   repairs are a section on `/handyman/` that links OurKampung's checklist rather than rewriting it.

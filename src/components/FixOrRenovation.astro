@@ -1,9 +1,12 @@
 ---
 /**
  * A small fix beside a renovation job, to show where this site's lane ends.
- * Renovation goes to Junk to Clear (PORTFOLIO's link table), so that side links
- * its renovation page and introduces it as a company we refer jobs to. It is
- * a separate company, never "the same team" (independence, 6 Oct 2026).
+ * Renovation goes to Junk to Clear (PORTFOLIO's link table), introduced as a
+ * company we refer jobs to. It is a separate company, never "the same team"
+ * (independence, 6 Oct 2026). The panel appears on nine pages, but only
+ * /handyman/ links its renovation page (`linkPartner`): repeated template links
+ * to an outside company are what Google's link-spam policy describes (user,
+ * 6 Oct 2026). Everywhere else the sentence stays, unlinked.
  */
 import { company } from '../lib/data';
 
@@ -13,6 +16,8 @@ interface Props {
   bigger?: string[];
   note?: string;
   heading?: string;
+  /** Link Junk to Clear's renovation page. Only /handyman/ sets it. */
+  linkPartner?: boolean;
 }
 
 const {
@@ -30,6 +35,7 @@ const {
   ],
   note,
   heading = 'A small fix, or a renovation?',
+  linkPartner = false,
 } = Astro.props;
 
 const tick = 'M13.5 4.5 6.5 12 2.5 8.2';
@@ -67,7 +73,9 @@ const tick = 'M13.5 4.5 6.5 12 2.5 8.2';
           ))}
         </ul>
         <p class="mt-4 text-sm leading-relaxed text-ink-muted">
-          {note && <span>{note}{' '}</span>}<a href={company.links.junkToClearRenovation} class="text-brand underline underline-offset-2">Junk to Clear</a>,
+          {note && <span>{note}{' '}</span>}{linkPartner
+            ? <a href={company.links.junkToClearRenovation} class="text-brand underline underline-offset-2">Junk to Clear</a>
+            : 'Junk to Clear'},
           a renovation and disposal company we refer jobs to, takes renovation enquiries.
         </p>
       </figcaption>

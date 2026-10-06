@@ -228,6 +228,7 @@ for (const p of pages.values()) {
 }
 
 // --- family links -------------------------------------------------------------
+const JTC_PAGES = new Set(['/handyman/', '/handyman/furniture-assembly/', '/handyman/appliance-repair/']);
 const FAMILY = /https?:\/\/(www\.)?(junktoclear\.com\.sg|hometoclean\.com|hometomoved\.com|skillstofix\.com|ourkampung\.com|swyftclear\.com|relocado\.asia|pesttoclear\.com|aircontocool\.com|spacetoreno\.com)/;
 for (const p of pages.values()) {
   const chrome = [
@@ -245,6 +246,10 @@ for (const p of pages.values()) {
     // Junk to Clear is a partner we refer jobs to, with no fees: plain links only.
     if (/junktoclear\.com\.sg/.test(tag) && /\brel="/.test(tag)) err(`${p.route}: Junk to Clear link has a rel attribute (plain links only)`);
   }
+  // Junk to Clear links only where its service is the reader's next step, and
+  // never as a template link across pages (user, 6 Oct 2026): the renovation
+  // panel on /handyman/, and the disposal lines on two job pages.
+  if (/href="https:\/\/junktoclear\.com\.sg/.test(p.html) && !JTC_PAGES.has(p.route)) err(`${p.route}: links Junk to Clear (allowed only on ${[...JTC_PAGES].join(', ')})`);
   // Every Junk to Clear link must say what it is in the same sentence.
   for (const m of p.html.matchAll(/junktoclear\.com\.sg[^"]*"[^>]*>Junk to Clear<\/a>([\s\S]{0,160})/g)) {
     if (!/company we refer jobs to/.test(textOf(m[1]))) err(`${p.route}: Junk to Clear link not introduced as "a ... company we refer jobs to"`);
