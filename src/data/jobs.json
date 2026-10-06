@@ -60,9 +60,9 @@
       { "q": "Can the handyman bring the furniture from the shop?", "a": "Furniture assembly is the building part. If you need the furniture collected as well, say so in the enquiry and we'll check whether the partner can do it." },
       { "q": "What if a part is missing or broken?", "a": "The handyman checks the parts before starting. If something is missing, most retailers send spares free, and the handyman can finish that piece on a return visit." },
       { "q": "Will my wardrobe be fixed to the wall?", "a": "Tall pieces should be. Furniture tipping over is a real risk with children in the home, and most flat-pack wardrobes come with an anti-tip kit for this reason. Ask for it in the enquiry." },
-      { "q": "Can you take my old furniture away?", "a": "The handyman can take it apart. For getting rid of it, Junk to Clear, run by the same team, collects old furniture." }
+      { "q": "Can you take my old furniture away?", "a": "The handyman can take it apart. For getting rid of it, Junk to Clear, a disposal company we refer jobs to, collects old furniture." }
     ],
-    "disposal": "Replacing an old bed or wardrobe? The handyman can take it apart, and Junk to Clear, run by the same team as BrokenToFixed, can collect it.",
+    "disposal": "Replacing an old bed or wardrobe? The handyman can take it apart, and Junk to Clear, a disposal company we refer jobs to, can collect it.",
     "illoAlt": "A half-built flat-pack wardrobe with its door leaning against it, an open box of parts, an Allen key and a screwdriver"
   },
   {
@@ -437,7 +437,7 @@
       "The repair is made, or the new appliance is installed, levelled and connected.",
       "The appliance is run through a cycle, or left running, to check it works."
     ],
-    "afterwards": "Clean washing machine filters and dryer lint traps regularly, leave the washer door ajar between washes, and keep space behind a fridge for air to move. If an appliance is past repair, Junk to Clear can collect the old one.",
+    "afterwards": "Clean washing machine filters and dryer lint traps regularly, leave the washer door ajar between washes, and keep space behind a fridge for air to move.",
     "premises": {
       "hdb": "HDB kitchens and service yards are compact, and washers and dryers are often stacked. Check that the new machine fits the space, including the door's swing.",
       "condo": "Condo kitchens often have built-in appliances in fitted cabinets. Note that in the enquiry, since taking them out takes longer.",
@@ -448,9 +448,9 @@
       { "q": "Is my old appliance worth repairing?", "a": "It depends on the fault, the price of the part and the machine's age. The partner will say so if a repair isn't worth it, and you decide." },
       { "q": "My appliance is still under warranty. Should I use you?", "a": "Check with the brand's own service first: work by anyone else may void the warranty." },
       { "q": "Can you install a washing machine I bought?", "a": "Yes, where the tap, drain and power socket are already in place. Many shops deliver without installing, or charge to install." },
-      { "q": "Can you take my old appliance away?", "a": "The partner can disconnect it. For collection and disposal, Junk to Clear, run by the same team as BrokenToFixed, can take it." }
+      { "q": "Can you take my old appliance away?", "a": "The partner can disconnect it. For collection and disposal, Junk to Clear, a disposal company we refer jobs to, can take it." }
     ],
-    "disposal": "Replacing an appliance that can't be saved? Junk to Clear, run by the same team as BrokenToFixed, can collect the old one.",
+    "disposal": "Replacing an appliance that can't be saved? Junk to Clear, a disposal company we refer jobs to, can collect the old one.",
     "illoAlt": "A front-loading washing machine with its door open and a fridge beside it, with a wrench and a spare part"
   }
 ]

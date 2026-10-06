@@ -1,16 +1,15 @@
 {
-  "entityName": "SKAP Waste Management Pte Ltd",
   "tradingName": "BrokenToFixed",
-  "parentBrand": "Junk to Clear",
-  "parentBrandUrl": "https://junktoclear.com.sg",
-  "yearEstablished": 2009,
+  "team": "the OurKampung team",
+  "familyName": "OurKampung",
+  "familyUrl": "https://ourkampung.com/",
   "siteUrl": "https://brokentofixed.com",
   "operatingHoursDisplay": "Mon-Fri 9am-6pm, Sat 9am-1pm. Closed Sunday and public holidays.",
-  "businessModelStatement": "BrokenToFixed is a handyman matching service run by the team behind Junk to Clear. We pass your enquiry to a partner handyman, who quotes and does the job.",
+  "businessModelStatement": "BrokenToFixed is a handyman matching service run by the OurKampung team. We pass your enquiry to a partner handyman, who quotes and does the job.",
   "formSubmit": {
     "defaultEndpoint": "https://formsubmit.co/1aacc4903352135bb0fa38c3987d3abd",
     "subjectPrefix": "BrokenToFixed – ",
-    "note": "The build variable PUBLIC_FORM_ENDPOINT overrides defaultEndpoint; Both are FormSubmit's alias for the family inbox, which the user confirmed on 5 Oct 2026 reaches it; the raw address is no longer used. The form posts to the /ajax/ form of whichever is used. FormSubmit may ask for a fresh activation the first time a new site posts to it, so send one test enquiry from the live domain (with the user's OK) and click the confirmation link."
+    "note": "The build variable PUBLIC_FORM_ENDPOINT overrides defaultEndpoint. Both are FormSubmit's alias for the family inbox, which the user confirmed on 5 Oct 2026 reaches it; the raw address is no longer used. The form posts to the /ajax/ form of whichever is used. FormSubmit may ask for a fresh activation the first time a new site posts to it, so send one test enquiry from the live domain (with the user's OK) and click the confirmation link."
   },
   "links": {
     "junkToClearHousehold": "https://junktoclear.com.sg/services/residential-waste-disposal-singapore/",

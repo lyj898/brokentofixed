@@ -228,7 +228,7 @@ for (const p of pages.values()) {
 }
 
 // --- family links -------------------------------------------------------------
-const FAMILY = /https?:\/\/(www\.)?(junktoclear\.com\.sg|hometoclean\.com|hometomoved\.com|skillstofix\.com|ourkampung\.com|swyftclear\.com|relocado\.asia|pesttoclear\.com|aircontocool\.com)/;
+const FAMILY = /https?:\/\/(www\.)?(junktoclear\.com\.sg|hometoclean\.com|hometomoved\.com|skillstofix\.com|ourkampung\.com|swyftclear\.com|relocado\.asia|pesttoclear\.com|aircontocool\.com|spacetoreno\.com)/;
 for (const p of pages.values()) {
   const chrome = [
     (p.html.match(/<header[\s\S]*?<\/header>/) ?? [''])[0],
@@ -242,6 +242,12 @@ for (const p of pages.values()) {
   if (FAMILY.test(chrome.replace(allowed, ''))) err(`${p.route}: family-site link in the header or footer (no sitewide links)`);
   for (const [tag] of p.html.matchAll(/<a\b[^>]*>/g)) {
     if (FAMILY.test(tag) && /noreferrer/.test(tag)) err(`${p.route}: rel="noreferrer" on a family link hides the referral`);
+    // Junk to Clear is a partner we refer jobs to, with no fees: plain links only.
+    if (/junktoclear\.com\.sg/.test(tag) && /\brel="/.test(tag)) err(`${p.route}: Junk to Clear link has a rel attribute (plain links only)`);
+  }
+  // Every Junk to Clear link must say what it is in the same sentence.
+  for (const m of p.html.matchAll(/junktoclear\.com\.sg[^"]*"[^>]*>Junk to Clear<\/a>([\s\S]{0,160})/g)) {
+    if (!/company we refer jobs to/.test(textOf(m[1]))) err(`${p.route}: Junk to Clear link not introduced as "a ... company we refer jobs to"`);
   }
 }
 
@@ -263,7 +269,7 @@ for (const p of pages.values()) {
     const parsed = subject ? JSON.parse(subject) : '';
     if (!/^BrokenToFixed – \S/.test(parsed)) err(`${p.route}: form subject is "${parsed}", expected "BrokenToFixed – <page>"`);
     if (!p.html.includes(JSON.stringify(endpoint))) err(`${p.route}: form does not post to ${endpoint}`);
-    if (!/team behind Junk to Clear/.test(textOf(p.html))) err(`${p.route}: form without the PDPA notice naming the team behind Junk to Clear`);
+    if (!/Your details go to the OurKampung team, who pass them to the partner who'll quote for the job/.test(textOf(p.html))) err(`${p.route}: form without the family's PDPA notice`);
     if ((p.html.match(/<form data-lead-form/g) ?? []).length > 1) err(`${p.route}: more than one enquiry form`);
   } else if (events.length) {
     err(`${p.route}: GA4 event without a form`);

@@ -1,8 +1,9 @@
 # brokentofixed.com
 
-BrokenToFixed: a handyman matching service in Singapore, run by the team behind Junk to Clear.
-Enquiries arrive through a FormSubmit form, and the user passes each one to the Junk to Clear team, which
-passes it to a partner handyman. Built the way PestToClear is (structure copied, not text). Brief:
+BrokenToFixed: a handyman matching service in Singapore, run by the OurKampung team and part of the
+OurKampung family. Enquiries arrive through a FormSubmit form, and the OurKampung team passes each one to a
+partner handyman. No company runs the site and none is named (independence, 6 Oct 2026:
+`../jtc-family/briefs/independence.md`). Built the way PestToClear is (structure copied, not text). Brief:
 `../jtc-family/briefs/brokentofixed.md`.
 
 ## Stack
@@ -63,9 +64,13 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
   changing this.
 - **No invented statistics, reviews, ratings, testimonials or promises** (same-day, guaranteed, 24/7), in
   copy or in JSON-LD.
-- **Lane.** Handyman sales searches only. Not renovation or full repainting (Junk to Clear sells that: the
-  fix-or-renovation panel links its renovation page), aircon, pest control, cleaning or moving. Where a job
-  leaves junk behind (furniture, appliances), the job page links Junk to Clear's household page. Handover
+- **Lane.** Handyman sales searches only. Not renovation or full repainting (we refer those to Junk to
+  Clear: the fix-or-renovation panel links its renovation page), aircon, pest control, cleaning or moving.
+  Where a job leaves junk behind (furniture, appliances), the job page links Junk to Clear's household page.
+- **Junk to Clear** is a separate company we refer disposal, clearance and renovation jobs to, with no fees.
+  Every mention introduces it as "a disposal company we refer jobs to" (renovation: "a renovation and
+  disposal company we refer jobs to"); never "our", "sister" or "same team". Plain links only: no `rel`.
+  The audit checks both. No SKAP, no "team behind Junk to Clear", no 2009. Handover
   repairs are a section on `/handyman/` that links OurKampung's checklist rather than rewriting it.
 - **One GA4 event:** `generate_lead`, after FormSubmit confirms delivery. The site's code sends no
   `form_submit`, `button_click` or `form_start`. GA4's enhanced measurement (left on) sends `form_start` and
@@ -73,13 +78,13 @@ No stock photos, no brand logos, no before-and-after pictures. Figures are gener
   code in GA4 before it first fires (PORTFOLIO.md). GA4 property "BrokenToFixed" 557370171 in the OurKampung
   account (403279198; moved from Junktoclear on 6 Oct 2026), stream 16043199055, measurement ID G-SBWGCBW1TY (the `PUBLIC_GA4_ID` repo variable, set 5 Oct 2026).
 - **Form.** Fields: the jobs (checkboxes), a description, property type, area, timing, name, and phone or
-  WhatsApp. Subject is `BrokenToFixed – <page>`. The PDPA line says the details go to the team behind Junk
-  to Clear, which passes them to the partner handyman who'll quote. If sending fails it says so and keeps
+  WhatsApp. Subject is `BrokenToFixed – <page>`. The PDPA line is the family's: "Your details go to the
+  OurKampung team, who pass them to the partner who'll quote for the job." If sending fails it says so and keeps
   what was typed; no contact details are offered. The form posts to FormSubmit's alias, so no inbox address
   appears in the page; the audit fails if one does.
 - **Family links.** None in the header, and in the footer only "Part of OurKampung" (the family revamp,
   `../jtc-family/briefs/family-revamp.md`, 5 Oct 2026): OurKampung's home page, `rel="nofollow"`. The About
-  page links Junk to Clear and OurKampung's /our-sites/. Sister sites link each other only in the text, at the
+  page links OurKampung's /our-sites/. Sister sites link each other only in the text, at the
   step that needs it. Never `rel="noreferrer"`.
 
 ## Before launch

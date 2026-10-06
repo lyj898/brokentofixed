@@ -25,6 +25,12 @@ export const BANNED_COPY = [
     why: 'mentions licensing (the user asked the site not to talk about it)',
   },
   {
+    // Independence (user, 6 Oct 2026): no company runs the family, and Junk to
+    // Clear is a separate company we refer jobs to, never "the same team".
+    re: /\bSKAP\b|team behind Junk to Clear|Junk to Clear, run by the same team|\b(since|established( in)?) 2009\b|trading name of|\bUEN\b/i,
+    why: 'names a company or borrows Junk to Clear\'s facts (the OurKampung team runs this site)',
+  },
+  {
     re: /\b(testimonial|5[- ]star|rated \d|\d(\.\d)? stars?)\b/i,
     why: 'looks like a review or rating (none have been collected)',
   },

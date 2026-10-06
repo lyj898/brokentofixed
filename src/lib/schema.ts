@@ -4,6 +4,8 @@
  * Deliberate omissions:
  *   - No `LocalBusiness`. The site has no premises and does no repairs itself.
  *   - No `AggregateRating` or `Review`. No reviews have been collected.
+ *   - No `legalName` or `foundingDate`: no company runs the site (independence,
+ *     6 Oct 2026). OurKampung is the parent organisation.
  *   - No `offers` or prices. Prices come from the partner once it knows the job.
  */
 
@@ -20,7 +22,6 @@ export function organizationNode(): JsonLdNode {
     '@type': 'Organization',
     '@id': ORG_ID,
     name: company.tradingName,
-    legalName: company.entityName,
     url: `${ORIGIN}/`,
     description: company.businessModelStatement,
     // The inbox is deliberately not published. Contact is form-only.
@@ -32,6 +33,7 @@ export function organizationNode(): JsonLdNode {
       availableLanguage: 'English',
     },
     areaServed: { '@type': 'Country', name: 'Singapore' },
+    parentOrganization: { '@type': 'Organization', name: company.familyName, url: company.familyUrl },
   };
 }
 

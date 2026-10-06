@@ -6,7 +6,8 @@
  * - The subject carries the site and the page ("BrokenToFixed – Furniture
  *   assembly") so enquiries can be counted per site and per page from the inbox.
  * - `generate_lead` fires once, only after FormSubmit confirms delivery.
- * - The PDPA notice says exactly where the details go.
+ * - The PDPA notice says exactly where the details go, in the family's words
+ *   (PORTFOLIO, Enquiries, 6 Oct 2026).
  * - If sending fails, the message says so and everything typed stays in place.
  *   No contact details are offered instead (family-wide since 2 Oct 2026).
  * - The endpoint comes from PUBLIC_FORM_ENDPOINT when set (src/lib/contact.ts).
@@ -117,9 +118,8 @@ const optional = 'font-normal text-ink-faint';
   <p data-lead-status role="status" aria-live="polite" class="hidden text-sm font-medium"></p>
 
   <p class="text-xs leading-relaxed text-ink-faint">
-    Your details go to the team behind {company.parentBrand}, which passes them to the
-    partner handyman who will quote you. They are used only for this enquiry and are not
-    sold. See the
+    Your details go to the OurKampung team, who pass them to the partner who'll quote for
+    the job. They are used only for this enquiry and are not sold. See the
     <a href={urls.privacy()} class="underline underline-offset-2">privacy policy</a>.
   </p>
 </form>

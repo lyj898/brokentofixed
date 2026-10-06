@@ -3,8 +3,8 @@
  * /privacy/
  *
  * PDPA privacy policy. The section that matters most for a matching service is
- * disclosure: the details go to the team behind Junk to Clear, which passes
- * them to the partner handyman who will quote. The form's notice says the same.
+ * disclosure: the details go to the OurKampung team, which passes them to the
+ * partner handyman who will quote. No company is named (independence, 6 Oct 2026). The form's notice says the same.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { company } from '../lib/data';
@@ -17,7 +17,7 @@ const { title, description } = meta(
   'How BrokenToFixed collects, uses and discloses personal data under Singapore’s PDPA, including passing enquiries to partner handymen.',
 );
 
-const lastUpdated = '5 October 2026';
+const lastUpdated = '6 October 2026';
 ---
 
 <BaseLayout title={title} description={description} path={path} crumbs={[{ name: 'Privacy policy', path }]}>
@@ -48,17 +48,15 @@ const lastUpdated = '5 October 2026';
       <p class="text-sm leading-relaxed">
         <strong class="font-semibold">The short version.</strong> {company.tradingName} is a
         matching service, not a repair company. When you send an enquiry, your details
-        go to the team behind {company.parentBrand}, which passes them to the partner
-        handyman who will quote you. That is the point of the service, and the form
+        go to {company.team}, who pass them to the partner handyman who will quote you. That is the point of the service, and the form
         says so before you send it. We don’t sell your data.
       </p>
     </div>
 
     <h2>1. Who we are</h2>
     <p>
-      This site is run by the team behind {company.parentBrand}, operated by
-      <strong>{company.entityName}</strong>. In this policy, “we”, “us” and “our” mean that
-      team. {company.tradingName} introduces homes and businesses in Singapore to independent
+      This site is run by {company.team}, which runs OurKampung and its family of
+      Singapore home sites. In this policy, “we”, “us” and “our” mean that team. {company.tradingName} introduces homes and businesses in Singapore to independent
       handymen. We don’t carry out repairs ourselves.
     </p>
 
@@ -90,7 +88,8 @@ const lastUpdated = '5 October 2026';
       When you send an enquiry, we pass your name, phone number and the details of the job
       to the partner handyman who will quote you, so they can contact you directly.
       Occasionally we may pass it to a second partner, for example if the first can’t take
-      the job. We don’t sell personal data, and we don’t pass it to advertisers or unrelated
+      the job. If what you need is disposal, clearance or renovation, that partner can be
+      Junk to Clear, a disposal company we refer jobs to. We don’t sell personal data, and we don’t pass it to advertisers or unrelated
       businesses.
     </p>
     <p>

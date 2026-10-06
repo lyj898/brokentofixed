@@ -4,7 +4,7 @@
  * sitewide or footer links between them. The one exception is "Part of
  * OurKampung" (family revamp, 5 Oct 2026), marked nofollow so it is for
  * readers, not rankings, and never noreferrer so GA4 still credits the visit.
- * The About page carries the one link to Junk to Clear.
+ * No company is named (independence, 6 Oct 2026).
  */
 import Wordmark from './Wordmark.astro';
 import { company, jobs } from '../lib/data';
@@ -46,14 +46,14 @@ const link = 'text-sm text-ink-muted no-underline hover:text-brand';
 
     <div class="mt-12 border-t border-line pt-8 text-sm leading-relaxed text-ink-muted">
       <p>
-        {company.tradingName} is run by the team behind {company.parentBrand}.
+        {company.tradingName} is run by {company.team}.
         The work is done by independent partner handymen.
       </p>
       <p class="mt-1">{company.operatingHoursDisplay}</p>
       <p class="mt-4">
         Part of <a href={company.links.ourKampung} rel="nofollow" class="text-ink-muted underline underline-offset-2 hover:text-brand">OurKampung</a>.
       </p>
-      <p class="mt-6 text-2xs text-ink-faint">&copy; {year} {company.entityName}.</p>
+      <p class="mt-6 text-2xs text-ink-faint">&copy; {year} {company.tradingName}.</p>
     </div>
   </div>
 </footer>

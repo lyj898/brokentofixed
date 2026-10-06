@@ -43,18 +43,18 @@ export interface Job {
   afterwards: string;
   premises: Premises;
   faqs: Faq[];
-  /** Show the one-line pointer to Junk to Clear for what the job leaves behind. */
+  /** The one-line pointer to Junk to Clear, a disposal company we refer jobs to, for what the job leaves behind. */
   disposal?: string;
   /** Alt text for public/illo/{slug}.svg. */
   illoAlt: string;
 }
 
 export interface Company {
-  entityName: string;
   tradingName: string;
-  parentBrand: string;
-  parentBrandUrl: string;
-  yearEstablished: number;
+  /** Who runs the site, as written in copy: "the OurKampung team". No company is named (independence, 6 Oct 2026). */
+  team: string;
+  familyName: string;
+  familyUrl: string;
   siteUrl: string;
   operatingHoursDisplay: string;
   businessModelStatement: string;

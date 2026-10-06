@@ -1,8 +1,9 @@
 ---
 /**
  * A small fix beside a renovation job, to show where this site's lane ends.
- * Renovation is Junk to Clear's (PORTFOLIO lanes), so that side links its
- * renovation page and says the same team runs it.
+ * Renovation goes to Junk to Clear (PORTFOLIO's link table), so that side links
+ * its renovation page and introduces it as a company we refer jobs to. It is
+ * a separate company, never "the same team" (independence, 6 Oct 2026).
  */
 import { company } from '../lib/data';
 
@@ -67,7 +68,7 @@ const tick = 'M13.5 4.5 6.5 12 2.5 8.2';
         </ul>
         <p class="mt-4 text-sm leading-relaxed text-ink-muted">
           {note && <span>{note}{' '}</span>}<a href={company.links.junkToClearRenovation} class="text-brand underline underline-offset-2">Junk to Clear</a>,
-          run by the same team as {company.tradingName}, takes renovation enquiries.
+          a renovation and disposal company we refer jobs to, takes renovation enquiries.
         </p>
       </figcaption>
     </figure>

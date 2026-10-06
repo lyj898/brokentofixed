@@ -2,9 +2,9 @@
 /**
  * /about/
  *
- * Says plainly that this is a matching service run by the team behind Junk to
- * Clear. The one link to Junk to Clear's home page lives here, not in the
- * footer. Nothing about licences: the user's call, 5 Oct 2026.
+ * Says plainly that this is a matching service run by the OurKampung team, and
+ * names no company (independence, 6 Oct 2026). Nothing about licences: the
+ * user's call, 5 Oct 2026.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
@@ -16,8 +16,8 @@ import { meta } from '../lib/seo';
 
 const path = urls.about();
 const { title, description } = meta(
-  'About BrokenToFixed | Run by the Team Behind Junk to Clear',
-  'BrokenToFixed is a handyman matching service in Singapore, run by the team behind Junk to Clear. Partner handymen quote and do the work.',
+  'About BrokenToFixed | Part of the OurKampung Family',
+  'BrokenToFixed is a handyman matching service in Singapore, run by the OurKampung team. Partner handymen quote and do the work.',
 );
 ---
 
@@ -28,8 +28,7 @@ const { title, description } = meta(
         <h1 class="text-3xl font-semibold sm:text-4xl lg:text-5xl">About {company.tradingName}</h1>
         <p class="mt-5 text-lg leading-relaxed text-ink-muted">
           {company.tradingName} is a handyman matching service for homes and offices in
-          Singapore, run by the team behind
-          <a href={company.parentBrandUrl} class="text-brand underline underline-offset-2">{company.parentBrand}</a>.
+          Singapore, run by {company.team}.
         </p>
       </div>
       <img
@@ -60,14 +59,10 @@ const { title, description } = meta(
 
       <h2 class="text-ink">Who we are</h2>
       <p>
-        {company.tradingName} is run by the team behind {company.parentBrand}, which has
-        handled disposal and clearance jobs for households and businesses in Singapore since
-        {company.yearEstablished}. The same team reads every enquiry that comes through this
-        site and passes it on.
-      </p>
-      <p>
-        {company.tradingName} is one of a family of sites run by the same team, with
-        <a href={company.links.ourKampungSites}>OurKampung</a> as its front door.
+        {company.tradingName} is run by {company.team}, which runs a family of
+        Singapore home sites with <a href={company.links.ourKampungSites}>OurKampung</a> as
+        its front door. The same team reads every enquiry that comes through this site and
+        passes it on.
       </p>
 
       <h2 class="text-ink">What we won’t do</h2>
